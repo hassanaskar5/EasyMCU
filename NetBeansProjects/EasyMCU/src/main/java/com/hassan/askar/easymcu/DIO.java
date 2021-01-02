@@ -27,11 +27,12 @@ enum PIN_DIR {
  */
 public class DIO extends UpdateDriver {
 
-    //DIO Attributes
-    //32 ATMega32 Controller Pins set by defualt as the following values 
-    private String config[] = {PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString()};
+//DIO Attributes
     //32 ATMega32 Controller Pins Names
     private String element[] = {"DIO_u8_PIN_DIR_0", "DIO_u8_PIN_DIR_1", "DIO_u8_PIN_DIR_2", "DIO_u8_PIN_DIR_3", "DIO_u8_PIN_DIR_4", "DIO_u8_PIN_DIR_5", "DIO_u8_PIN_DIR_6", "DIO_u8_PIN_DIR_7", "DIO_u8_PIN_DIR_8", "DIO_u8_PIN_DIR_9", "DIO_u8_PIN_DIR_10", "DIO_u8_PIN_DIR_11", "DIO_u8_PIN_DIR_12", "DIO_u8_PIN_DIR_13", "DIO_u8_PIN_DIR_14", "DIO_u8_PIN_DIR_15", "DIO_u8_PIN_DIR_16", "DIO_u8_PIN_DIR_17", "DIO_u8_PIN_DIR_18", "DIO_u8_PIN_DIR_19", "DIO_u8_PIN_DIR_20", "DIO_u8_PIN_DIR_21", "DIO_u8_PIN_DIR_22", "DIO_u8_PIN_DIR_23", "DIO_u8_PIN_DIR_24", "DIO_u8_PIN_DIR_25", "DIO_u8_PIN_DIR_26", "DIO_u8_PIN_DIR_27", "DIO_u8_PIN_DIR_28", "DIO_u8_PIN_DIR_29", "DIO_u8_PIN_DIR_30", "DIO_u8_PIN_DIR_31"};
+    //32 ATMega32 Controller Pins set by defualt as the following values 
+    private String config[] = {PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString()};
+    private Color pinColors[] = new Color[32];
     private String CurrentFile;
 
     public DIO(String currentFile) {
@@ -39,57 +40,60 @@ public class DIO extends UpdateDriver {
     }
 
     //DIO Methods
-    /**
-     * setPinValue method Sets pin value by determining pin number and its value
-     *
-     *
-     * @param pinNum The pin number that'll change
-     * @param pinValue The pin value that'll change
-     */
+    public void getDriverElementsValues() {
+        System.out.println(CurrentFile);
+        config = getDriverInfo("DIO_config.h", element.length, element, CurrentFile);
+        setPinColors();
+    }
+
+    private void setPinColors() {
+        for (int pinNum = 0; pinNum < config.length; pinNum++) {
+            if (config[pinNum].equals(PIN_DIR.DIO_u8_INPUT.toString())) {
+                pinColors[pinNum] = Color.WHITE;
+            } else if (config[pinNum].equals(PIN_DIR.DIO_u8_OUTPUT.toString())) {
+                pinColors[pinNum] = Color.BLACK;
+            }
+        }
+    }
+
+    public void setPinDirectionColor(JLabel[] PinDirectionLabel) {
+
+        for (int i = 0; i < PinDirectionLabel.length; i++) {
+            System.out.println(config[i] + " " + pinColors[i]);
+            if (config[i].contains("DIO_u8_OUTPUT")) {
+                PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " OUTPUT");
+                PinDirectionLabel[i].setForeground(pinColors[i]);
+            } else if (config[i].contains("DIO_u8_INPUT")) {
+                PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " INPUT");
+                PinDirectionLabel[i].setForeground(pinColors[i]);
+            }
+
+        }
+    }
+
     public Color togglePinValue(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
-       Color labelColorAfterChange=labelColorBeforeChange;
-       //feedback
-       System.out.println(labelColorBeforeChange.toString());
-       System.out.println(config[pinNum]);
-       
-       
-       //processing
+        Color labelColorAfterChange = labelColorBeforeChange;
+        //feedback
+        System.out.println(labelColorBeforeChange.toString());
+        System.out.println(config[pinNum]);
+
+        //processing
         if (labelColorBeforeChange == Color.WHITE) {
             config[pinNum] = PIN_DIR.DIO_u8_OUTPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " OUTPUT");
             PinDirectionLabel.setForeground(Color.BLACK);
             labelColorAfterChange = Color.BLACK;
-            
+
         } else if (labelColorBeforeChange == Color.BLACK) {
             config[pinNum] = PIN_DIR.DIO_u8_INPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " INPUT");
             PinDirectionLabel.setForeground(Color.WHITE);
             labelColorAfterChange = Color.WHITE;
-            
+
         }
         System.out.println(config[pinNum]);
+        updateDIODriver();
         return labelColorAfterChange;
-    }
-
-    public void getDriverElementsValues() {
-        System.out.println(CurrentFile);
-        config = getDriverInfo("DIO_config.h", element.length, element, CurrentFile);
-
-    }
-
-    public String[] setPinDirectionColor(JLabel[] PinDirectionLabel) {
-        for (int i = 0; i < PinDirectionLabel.length; i++) {
-            //System.out.println(config[i]);
-            if (config[i].contains("DIO_u8_OUTPUT")) {
-                PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " OUTPUT");
-                PinDirectionLabel[i].setForeground(Color.BLACK);
-            } else if (config[i].contains("DIO_u8_INPUT")) {
-                PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " INPUT");
-                PinDirectionLabel[i].setForeground(Color.WHITE);
-            }
-
-        }
-        return config;
     }
 
     /**

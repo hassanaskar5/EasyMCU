@@ -14,7 +14,7 @@ import javax.swing.JLabel;
  */
 public class CurrentProject extends javax.swing.JFrame {
 
-    private static String currentFile, name;
+    private static String currentFile;
 
     DynamicView DV = new DynamicView();
 
@@ -56,19 +56,21 @@ public class CurrentProject extends javax.swing.JFrame {
 
     Color panelMovingColor = new Color(41, 57, 80);
     Color labelMovingColor = new Color(255, 128, 0);
-    private String config[] = {PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString()};
 
     /**
      * Creates new form CurrentProject
      */
     public CurrentProject(String Location, String Name) {
         initComponents();
-        name = Name;
-        this.setTitle(name);
+        this.setTitle(Name);
         currentFile = Location;
-        projectNameLabel.setText(name);
-        getPinsDirection();
+        projectNameLabel.setText(Name);
+        getPinsDirection(Location);
 
+    }
+
+    private CurrentProject() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -1638,14 +1640,16 @@ public class CurrentProject extends javax.swing.JFrame {
         DIO Dio = new DIO(currentFile);
         DVPA0.setIsClicked(true);
         DVPA0.setLabelColorAfterChange(Dio.togglePinValue(pinNum, PinDirectionLabel, labelColorBeforeChange));
+        
 
     }
 
-    private void getPinsDirection() {
-        DIO Dio = new DIO(currentFile);
+    private void getPinsDirection(String Location) {
+        DIO Dio = new DIO(Location);
+        System.out.println("current file frame: "+Location);
         JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label5, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
         Dio.getDriverElementsValues();
-        config = Dio.setPinDirectionColor(PinDirectionLabel);
+        Dio.setPinDirectionColor(PinDirectionLabel);
     }
 
     /**
@@ -1679,7 +1683,7 @@ public class CurrentProject extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CurrentProject(currentFile, name).setVisible(true);
+                new CurrentProject().setVisible(true);
             }
         });
     }
