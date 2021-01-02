@@ -36,12 +36,11 @@ abstract class UpdateDriver {
      */
     
     protected void updateDriver(String driverFile, int indexNum, String element[], String config[],String CurrentFile) {
-        String Path="";
+
         List<String> lines = new ArrayList<>();
         String line = null;
         try {
             File f1 = new File(CurrentFile+"/" + driverFile);
-            File f2 = new File(Path + driverFile);
             
             FileReader fr = new FileReader(f1);
             BufferedReader br = new BufferedReader(fr);
@@ -75,12 +74,10 @@ abstract class UpdateDriver {
     
     
     protected  String[] getDriverInfo(String driverFile, int indexNum, String element[],String CurrentFile) {
-       System.out.println(CurrentFile);
         String Path="";
         String config[]=new String[indexNum];
         String line = null;
         try {
-            System.out.println(CurrentFile);
             File f1 = new File(CurrentFile+"/" +driverFile);
             
             FileReader fr = new FileReader(f1);

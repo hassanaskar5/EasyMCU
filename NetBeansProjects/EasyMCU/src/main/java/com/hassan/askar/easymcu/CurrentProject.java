@@ -18,41 +18,7 @@ public class CurrentProject extends javax.swing.JFrame {
 
     DynamicView DV = new DynamicView();
 
-    DynamicView DVPA0 = new DynamicView();
-    DynamicView DVPA1 = new DynamicView();
-    DynamicView DVPA2 = new DynamicView();
-    DynamicView DVPA3 = new DynamicView();
-    DynamicView DVPA4 = new DynamicView();
-    DynamicView DVPA5 = new DynamicView();
-    DynamicView DVPA6 = new DynamicView();
-    DynamicView DVPA7 = new DynamicView();
-
-    DynamicView DVPB0 = new DynamicView();
-    DynamicView DVPB1 = new DynamicView();
-    DynamicView DVPB2 = new DynamicView();
-    DynamicView DVPB3 = new DynamicView();
-    DynamicView DVPB4 = new DynamicView();
-    DynamicView DVPB5 = new DynamicView();
-    DynamicView DVPB6 = new DynamicView();
-    DynamicView DVPB7 = new DynamicView();
-
-    DynamicView DVPC0 = new DynamicView();
-    DynamicView DVPC1 = new DynamicView();
-    DynamicView DVPC2 = new DynamicView();
-    DynamicView DVPC3 = new DynamicView();
-    DynamicView DVPC4 = new DynamicView();
-    DynamicView DVPC5 = new DynamicView();
-    DynamicView DVPC6 = new DynamicView();
-    DynamicView DVPC7 = new DynamicView();
-
-    DynamicView DVPD0 = new DynamicView();
-    DynamicView DVPD1 = new DynamicView();
-    DynamicView DVPD2 = new DynamicView();
-    DynamicView DVPD3 = new DynamicView();
-    DynamicView DVPD4 = new DynamicView();
-    DynamicView DVPD5 = new DynamicView();
-    DynamicView DVPD6 = new DynamicView();
-    DynamicView DVPD7 = new DynamicView();
+    DynamicView DVP = new DynamicView();
 
     Color panelMovingColor = new Color(41, 57, 80);
     Color labelMovingColor = new Color(255, 128, 0);
@@ -64,13 +30,10 @@ public class CurrentProject extends javax.swing.JFrame {
      */
     public CurrentProject(String Location, String Name) {
         initComponents();
-        System.out.println("3");
         this.setTitle(Name);
         currentFile = Location;
         projectNameLabel.setText(Name);
-        System.out.println("4");
         getPinsDirection();
-        System.out.println("5");
     }
 
     private CurrentProject() {
@@ -86,12 +49,11 @@ public class CurrentProject extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        mainPanel = new javax.swing.JPanel();
         generalPanel = new javax.swing.JPanel();
         DIOContentPanel = new javax.swing.JPanel();
         exitLabel = new javax.swing.JLabel();
         AVRIcon = new javax.swing.JLabel();
-        PB0_Label = new javax.swing.JLabel();
-        PB2_Label = new javax.swing.JLabel();
         PA0_Label = new javax.swing.JLabel();
         PA1_Label = new javax.swing.JLabel();
         PA2_Label = new javax.swing.JLabel();
@@ -100,14 +62,22 @@ public class CurrentProject extends javax.swing.JFrame {
         PA5_Label = new javax.swing.JLabel();
         PA6_Label = new javax.swing.JLabel();
         PA7_Label = new javax.swing.JLabel();
-        PC7_Label = new javax.swing.JLabel();
-        PC6_Label = new javax.swing.JLabel();
-        PC5_Label = new javax.swing.JLabel();
-        PC4_Label = new javax.swing.JLabel();
-        PC3_Label = new javax.swing.JLabel();
-        PC2_Label = new javax.swing.JLabel();
-        PC1_Label = new javax.swing.JLabel();
+        PB0_Label = new javax.swing.JLabel();
+        PB1_Label = new javax.swing.JLabel();
+        PB2_Label = new javax.swing.JLabel();
+        PB3_Label = new javax.swing.JLabel();
+        PB4_Label = new javax.swing.JLabel();
+        PB5_Label = new javax.swing.JLabel();
+        PB6_Label = new javax.swing.JLabel();
+        PB7_Label = new javax.swing.JLabel();
         PC0_Label = new javax.swing.JLabel();
+        PC1_Label = new javax.swing.JLabel();
+        PC2_Label = new javax.swing.JLabel();
+        PC3_Label = new javax.swing.JLabel();
+        PC4_Label = new javax.swing.JLabel();
+        PC5_Label = new javax.swing.JLabel();
+        PC6_Label = new javax.swing.JLabel();
+        PC7_Label = new javax.swing.JLabel();
         PD0_Label = new javax.swing.JLabel();
         PD1_Label = new javax.swing.JLabel();
         PD2_Label = new javax.swing.JLabel();
@@ -121,22 +91,68 @@ public class CurrentProject extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         ApplyPanel = new javax.swing.JPanel();
         pointerApplyPanel = new javax.swing.JPanel();
         ApplyLabel = new javax.swing.JLabel();
         ApplyIconLabel = new javax.swing.JLabel();
-        PB1_Label = new javax.swing.JLabel();
-        PB3_Label = new javax.swing.JLabel();
-        PB4_Label = new javax.swing.JLabel();
-        PB5_Label = new javax.swing.JLabel();
-        PB6_Label = new javax.swing.JLabel();
-        PB7_Label = new javax.swing.JLabel();
-        USARTContentPanel = new javax.swing.JPanel();
-        exitLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        applyStatus = new javax.swing.JLabel();
         ADCContentPanel = new javax.swing.JPanel();
-        exitLabel3 = new javax.swing.JLabel();
+        exitLabel1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jSeparator4 = new javax.swing.JSeparator();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        ApplyPanel1 = new javax.swing.JPanel();
+        pointerApplyPanel1 = new javax.swing.JPanel();
+        ApplyLabel1 = new javax.swing.JLabel();
+        ApplyIconLabel1 = new javax.swing.JLabel();
+        USARTContentPanel = new javax.swing.JPanel();
+        exitLabel2 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        ApplyPanel2 = new javax.swing.JPanel();
+        pointerApplyPanel2 = new javax.swing.JPanel();
+        ApplyLabel2 = new javax.swing.JLabel();
+        ApplyIconLabel2 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        jComboBox10 = new javax.swing.JComboBox<>();
         sidePanel = new javax.swing.JPanel();
         projectNamePanel = new javax.swing.JPanel();
         projectNameLabel = new javax.swing.JLabel();
@@ -156,6 +172,7 @@ public class CurrentProject extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(82, 133, 212));
+        setForeground(new java.awt.Color(82, 133, 212));
         setLocationByPlatform(true);
         setUndecorated(true);
         setResizable(false);
@@ -170,10 +187,14 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
 
+        mainPanel.setBackground(new java.awt.Color(82, 133, 212));
+        mainPanel.setForeground(new java.awt.Color(82, 133, 212));
+
         generalPanel.setBackground(new java.awt.Color(82, 133, 212));
         generalPanel.setLayout(new java.awt.CardLayout());
 
         DIOContentPanel.setBackground(new java.awt.Color(82, 133, 212));
+        DIOContentPanel.setForeground(new java.awt.Color(82, 133, 212));
 
         exitLabel.setBackground(new java.awt.Color(82, 133, 212));
         exitLabel.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
@@ -194,42 +215,6 @@ public class CurrentProject extends javax.swing.JFrame {
         });
 
         AVRIcon.setIcon(new javax.swing.ImageIcon("/home/askar/NetBeansProjects/EasyMCU/Images/ATmega32_DIO.png")); // NOI18N
-
-        PB0_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB0_Label.setForeground(Color.white);
-        PB0_Label.setText("PB0 OUTPUT");
-        PB0_Label.setName("PB0"); // NOI18N
-        PB0_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB0_LabelMouseMoved(evt);
-            }
-        });
-        PB0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB0_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB0_LabelMouseExited(evt);
-            }
-        });
-
-        PB2_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB2_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB2_Label.setText("PB2");
-        PB2_Label.setName("PB2"); // NOI18N
-        PB2_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB2_LabelMouseMoved(evt);
-            }
-        });
-        PB2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB2_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB2_LabelMouseExited(evt);
-            }
-        });
 
         PA0_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PA0_Label.setForeground(new java.awt.Color(254, 254, 254));
@@ -375,111 +360,165 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
 
-        PC7_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC7_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC7_Label.setText("PC7");
-        PC7_Label.setName("PC7"); // NOI18N
-        PC7_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB0_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB0_Label.setForeground(Color.white);
+        PB0_Label.setText("PB0 OUTPUT");
+        PB0_Label.setName("PB0"); // NOI18N
+        PB0_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC7_LabelMouseMoved(evt);
+                PB0_LabelMouseMoved(evt);
             }
         });
-        PC7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC7_LabelMouseClicked(evt);
+                PB0_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC7_LabelMouseExited(evt);
+                PB0_LabelMouseExited(evt);
             }
         });
 
-        PC6_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC6_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC6_Label.setText("PC6");
-        PC6_Label.setName("PC6"); // NOI18N
-        PC6_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB1_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB1_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB1_Label.setText("PB1");
+        PB1_Label.setName("PB1"); // NOI18N
+        PB1_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC6_LabelMouseMoved(evt);
+                PB1_LabelMouseMoved(evt);
             }
         });
-        PC6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB1_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC6_LabelMouseClicked(evt);
+                PB1_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC6_LabelMouseExited(evt);
+                PB1_LabelMouseExited(evt);
             }
         });
 
-        PC5_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC5_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC5_Label.setText("PC5");
-        PC5_Label.setName("PC5"); // NOI18N
-        PC5_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB2_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB2_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB2_Label.setText("PB2");
+        PB2_Label.setName("PB2"); // NOI18N
+        PB2_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC5_LabelMouseMoved(evt);
+                PB2_LabelMouseMoved(evt);
             }
         });
-        PC5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC5_LabelMouseClicked(evt);
+                PB2_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC5_LabelMouseExited(evt);
+                PB2_LabelMouseExited(evt);
             }
         });
 
-        PC4_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC4_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC4_Label.setText("PC4");
-        PC4_Label.setName("PC4"); // NOI18N
-        PC4_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB3_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB3_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB3_Label.setText("PB2");
+        PB3_Label.setName("PB3"); // NOI18N
+        PB3_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC4_LabelMouseMoved(evt);
+                PB3_LabelMouseMoved(evt);
             }
         });
-        PC4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC4_LabelMouseClicked(evt);
+                PB3_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC4_LabelMouseExited(evt);
+                PB3_LabelMouseExited(evt);
             }
         });
 
-        PC3_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC3_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC3_Label.setText("PC3");
-        PC3_Label.setName("PC3"); // NOI18N
-        PC3_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB4_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB4_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB4_Label.setText("PB2");
+        PB4_Label.setName("PB4"); // NOI18N
+        PB4_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC3_LabelMouseMoved(evt);
+                PB4_LabelMouseMoved(evt);
             }
         });
-        PC3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC3_LabelMouseClicked(evt);
+                PB4_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC3_LabelMouseExited(evt);
+                PB4_LabelMouseExited(evt);
             }
         });
 
-        PC2_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC2_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC2_Label.setText("PC2");
-        PC2_Label.setName("PC2"); // NOI18N
-        PC2_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB5_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB5_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB5_Label.setText("PB2");
+        PB5_Label.setName("PB5"); // NOI18N
+        PB5_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC2_LabelMouseMoved(evt);
+                PB5_LabelMouseMoved(evt);
             }
         });
-        PC2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC2_LabelMouseClicked(evt);
+                PB5_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC2_LabelMouseExited(evt);
+                PB5_LabelMouseExited(evt);
+            }
+        });
+
+        PB6_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB6_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB6_Label.setText("PB2");
+        PB6_Label.setName("PB6"); // NOI18N
+        PB6_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PB6_LabelMouseMoved(evt);
+            }
+        });
+        PB6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB6_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PB6_LabelMouseExited(evt);
+            }
+        });
+
+        PB7_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB7_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB7_Label.setText("PB2");
+        PB7_Label.setName("PB7"); // NOI18N
+        PB7_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PB7_LabelMouseMoved(evt);
+            }
+        });
+        PB7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB7_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PB7_LabelMouseExited(evt);
+            }
+        });
+
+        PC0_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC0_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC0_Label.setText("PC0");
+        PC0_Label.setName("PC0"); // NOI18N
+        PC0_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC0_LabelMouseMoved(evt);
+            }
+        });
+        PC0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC0_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC0_LabelMouseExited(evt);
             }
         });
 
@@ -501,21 +540,111 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
 
-        PC0_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PC0_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PC0_Label.setText("PC0");
-        PC0_Label.setName("PC0"); // NOI18N
-        PC0_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PC2_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC2_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC2_Label.setText("PC2");
+        PC2_Label.setName("PC2"); // NOI18N
+        PC2_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PC0_LabelMouseMoved(evt);
+                PC2_LabelMouseMoved(evt);
             }
         });
-        PC0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+        PC2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PC0_LabelMouseClicked(evt);
+                PC2_LabelMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PC0_LabelMouseExited(evt);
+                PC2_LabelMouseExited(evt);
+            }
+        });
+
+        PC3_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC3_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC3_Label.setText("PC3");
+        PC3_Label.setName("PC3"); // NOI18N
+        PC3_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC3_LabelMouseMoved(evt);
+            }
+        });
+        PC3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC3_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC3_LabelMouseExited(evt);
+            }
+        });
+
+        PC4_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC4_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC4_Label.setText("PC4");
+        PC4_Label.setName("PC4"); // NOI18N
+        PC4_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC4_LabelMouseMoved(evt);
+            }
+        });
+        PC4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC4_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC4_LabelMouseExited(evt);
+            }
+        });
+
+        PC5_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC5_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC5_Label.setText("PC5");
+        PC5_Label.setName("PC5"); // NOI18N
+        PC5_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC5_LabelMouseMoved(evt);
+            }
+        });
+        PC5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC5_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC5_LabelMouseExited(evt);
+            }
+        });
+
+        PC6_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC6_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC6_Label.setText("PC6");
+        PC6_Label.setName("PC6"); // NOI18N
+        PC6_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC6_LabelMouseMoved(evt);
+            }
+        });
+        PC6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC6_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC6_LabelMouseExited(evt);
+            }
+        });
+
+        PC7_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PC7_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PC7_Label.setText("PC7");
+        PC7_Label.setName("PC7"); // NOI18N
+        PC7_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PC7_LabelMouseMoved(evt);
+            }
+        });
+        PC7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC7_LabelMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PC7_LabelMouseExited(evt);
             }
         });
 
@@ -666,21 +795,49 @@ public class CurrentProject extends javax.swing.JFrame {
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 128, 0));
+        jLabel3.setForeground(new java.awt.Color(238, 192, 81));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Instructions");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 128, 0));
-        jLabel4.setText("To Toggle The Pin  Direction, Click On It.");
+        jLabel4.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("To Toggle The Pin  Direction (Output or Input), Click On the pin.");
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 128, 0));
-        jLabel5.setText("If Pin Color is WHITE , The Pin Direction is Input");
+        jLabel5.setForeground(new java.awt.Color(254, 254, 254));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("If Pin Color is WHITE , The Pin Direction is INPUT");
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 128, 0));
-        jLabel6.setText("If Pin Color is BLACK , The Pin Direction is Output");
+        jLabel6.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("If Pin Color is BLACK , The Pin Direction is OUTPUT");
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("PAx means Port Ax. EX. PA0 means Port A0 pin.");
+
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("PBx means Port Ax. EX. PB3 means Port B3 pin.");
+
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("PCx means Port Cx. EX. PC1 means Port C1 pin.");
+
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("PDx means Port Dx. EX. PD7 means Port D7 pin.");
+
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("To apply the changes on DIO Driver Click \"Apply On Driver\" Button.");
 
         ApplyPanel.setBackground(new java.awt.Color(35, 64, 102));
         ApplyPanel.setForeground(new java.awt.Color(35, 64, 102));
@@ -736,121 +893,13 @@ public class CurrentProject extends javax.swing.JFrame {
             .addComponent(ApplyIconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        PB1_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB1_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB1_Label.setText("PB1");
-        PB1_Label.setName("PB1"); // NOI18N
-        PB1_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB1_LabelMouseMoved(evt);
-            }
-        });
-        PB1_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB1_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB1_LabelMouseExited(evt);
-            }
-        });
-
-        PB3_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB3_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB3_Label.setText("PB2");
-        PB3_Label.setName("PB3"); // NOI18N
-        PB3_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB3_LabelMouseMoved(evt);
-            }
-        });
-        PB3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB3_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB3_LabelMouseExited(evt);
-            }
-        });
-
-        PB4_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB4_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB4_Label.setText("PB2");
-        PB4_Label.setName("PB4"); // NOI18N
-        PB4_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB4_LabelMouseMoved(evt);
-            }
-        });
-        PB4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB4_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB4_LabelMouseExited(evt);
-            }
-        });
-
-        PB5_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB5_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB5_Label.setText("PB2");
-        PB5_Label.setName("PB5"); // NOI18N
-        PB5_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB5_LabelMouseMoved(evt);
-            }
-        });
-        PB5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB5_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB5_LabelMouseExited(evt);
-            }
-        });
-
-        PB6_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB6_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB6_Label.setText("PB2");
-        PB6_Label.setName("PB6"); // NOI18N
-        PB6_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB6_LabelMouseMoved(evt);
-            }
-        });
-        PB6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB6_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB6_LabelMouseExited(evt);
-            }
-        });
-
-        PB7_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB7_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB7_Label.setText("PB2");
-        PB7_Label.setName("PB7"); // NOI18N
-        PB7_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB7_LabelMouseMoved(evt);
-            }
-        });
-        PB7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PB7_LabelMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB7_LabelMouseExited(evt);
-            }
-        });
+        applyStatus.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        applyStatus.setForeground(new java.awt.Color(65, 211, 92));
 
         javax.swing.GroupLayout DIOContentPanelLayout = new javax.swing.GroupLayout(DIOContentPanel);
         DIOContentPanel.setLayout(DIOContentPanelLayout);
         DIOContentPanelLayout.setHorizontalGroup(
             DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(DIOContentPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(exitLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(DIOContentPanelLayout.createSequentialGroup()
                 .addGap(67, 67, 67)
                 .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -891,20 +940,29 @@ public class CurrentProject extends javax.swing.JFrame {
                         .addComponent(PA6_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(PA7_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(PA4_Label, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addGap(33, 33, 33)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 436, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(DIOContentPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOContentPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(ApplyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(exitLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(DIOContentPanelLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOContentPanelLayout.createSequentialGroup()
+                                .addComponent(applyStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(ApplyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
         DIOContentPanelLayout.setVerticalGroup(
             DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -942,158 +1000,593 @@ public class CurrentProject extends javax.swing.JFrame {
                         .addComponent(PD5_Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(PD6_Label)
-                        .addGap(43, 43, 43))
+                        .addGap(66, 66, 66))
                     .addGroup(DIOContentPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AVRIcon)
-                        .addContainerGap(24, Short.MAX_VALUE))
+                        .addContainerGap(50, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DIOContentPanelLayout.createSequentialGroup()
                         .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(DIOContentPanelLayout.createSequentialGroup()
                                 .addGap(39, 39, 39)
-                                .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(DIOContentPanelLayout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(ApplyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(DIOContentPanelLayout.createSequentialGroup()
-                                        .addComponent(PA0_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PA1_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PA2_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PA3_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PA4_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PA5_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PA6_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PA7_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(PC7_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PC6_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PC5_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PC4_Label)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(PC3_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PC2_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PC1_Label)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(PC0_Label)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(PD7_Label)
-                                        .addGap(29, 29, 29))))
-                            .addGroup(DIOContentPanelLayout.createSequentialGroup()
+                                .addComponent(PA0_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PA1_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PA2_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PA3_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PA4_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PA5_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PA6_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PA7_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(PC7_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PC6_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PC5_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PC4_Label)
+                                .addGap(12, 12, 12)
+                                .addComponent(PC3_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PC2_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PC1_Label)
+                                .addGap(18, 18, 18)
+                                .addComponent(PC0_Label)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(PD7_Label)
+                                .addGap(53, 53, 53))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, DIOContentPanelLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSeparator2)))
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(DIOContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ApplyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(applyStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addContainerGap())))
+            .addGroup(DIOContentPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator2)
+                .addContainerGap())
         );
 
         generalPanel.add(DIOContentPanel, "card2");
 
-        USARTContentPanel.setBackground(new java.awt.Color(82, 133, 212));
-
-        exitLabel4.setBackground(new java.awt.Color(82, 133, 212));
-        exitLabel4.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        exitLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        exitLabel4.setText("X");
-        exitLabel4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                exitLabel4MouseMoved(evt);
-            }
-        });
-        exitLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                exitLabel4MouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                exitLabel4MouseExited(evt);
-            }
-        });
-
-        jLabel2.setText("jLabel2");
-
-        javax.swing.GroupLayout USARTContentPanelLayout = new javax.swing.GroupLayout(USARTContentPanel);
-        USARTContentPanel.setLayout(USARTContentPanelLayout);
-        USARTContentPanelLayout.setHorizontalGroup(
-            USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, USARTContentPanelLayout.createSequentialGroup()
-                .addGap(0, 965, Short.MAX_VALUE)
-                .addComponent(exitLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, USARTContentPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(365, 365, 365))
-        );
-        USARTContentPanelLayout.setVerticalGroup(
-            USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(USARTContentPanelLayout.createSequentialGroup()
-                .addComponent(exitLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(175, 175, 175)
-                .addComponent(jLabel2)
-                .addContainerGap(487, Short.MAX_VALUE))
-        );
-
-        generalPanel.add(USARTContentPanel, "card2");
-
         ADCContentPanel.setBackground(new java.awt.Color(82, 133, 212));
+        ADCContentPanel.setForeground(new java.awt.Color(82, 133, 212));
+        ADCContentPanel.setToolTipText("");
 
-        exitLabel3.setBackground(new java.awt.Color(82, 133, 212));
-        exitLabel3.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        exitLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        exitLabel3.setText("X");
-        exitLabel3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        exitLabel1.setBackground(new java.awt.Color(82, 133, 212));
+        exitLabel1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        exitLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        exitLabel1.setText("X");
+        exitLabel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                exitLabel3MouseMoved(evt);
+                exitLabel1MouseMoved(evt);
             }
         });
-        exitLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        exitLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                exitLabel3MouseClicked(evt);
+                exitLabel1MouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                exitLabel3MouseExited(evt);
+                exitLabel1MouseExited(evt);
             }
         });
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel1.setText("Mode of operation");
+
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel2.setText("Adjustment");
+
+        jLabel12.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel12.setText("Autotrigger Source");
+
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel13.setText("Prescaller");
+
+        jLabel14.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel14.setText("Channel Number");
+
+        jComboBox1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AVCC", "AREF", "INTERNAL" }));
+
+        jComboBox2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Right Adjustment", "Left Adjustment" }));
+
+        jComboBox3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Free Running Mode", "Analog Comparator", "External Interrupt Request 0", "Timer Counter 0 Compare Match", "Timer Counter 0 Overflow", "Timer Counter 0 Compare Match B", "Timer Counter 1 Overflow", "Timer Counter 1 Capture Event" }));
+
+        jComboBox4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Divid By 2", "Divid By 4", "Divid By 8", "Divid By 16", "Divid By 32", "Divid By 64", "Divid By 128" }));
+        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox4ActionPerformed(evt);
+            }
+        });
+
+        jComboBox5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Port A0", "Port A1", "Port A2", "Port A3", "Port A4", "Port A5", "Port A6", "Port A7" }));
+
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("Instructions");
+
+        jLabel16.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("To Toggle The Pin  Direction (Output or Input), Click On the pin.");
+
+        jLabel17.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(254, 254, 254));
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("If Pin Color is WHITE , The Pin Direction is INPUT");
+
+        jLabel18.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("If Pin Color is BLACK , The Pin Direction is OUTPUT");
+
+        jLabel19.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("PAx means Port Ax. EX. PA0 means Port A0 pin.");
+
+        jLabel20.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText("PBx means Port Ax. EX. PB3 means Port B3 pin.");
+
+        jLabel21.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setText("PCx means Port Cx. EX. PC1 means Port C1 pin.");
+
+        jLabel22.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText("PDx means Port Dx. EX. PD7 means Port D7 pin.");
+
+        jLabel23.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setText("To apply the changes on DIO Driver Click \"Apply On Driver\" Button.");
+
+        ApplyPanel1.setBackground(new java.awt.Color(35, 64, 102));
+        ApplyPanel1.setForeground(new java.awt.Color(35, 64, 102));
+        ApplyPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                ApplyPanel1MouseMoved(evt);
+            }
+        });
+        ApplyPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApplyPanel1MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ApplyPanel1MouseExited(evt);
+            }
+        });
+
+        pointerApplyPanel1.setBackground(new java.awt.Color(255, 128, 0));
+        pointerApplyPanel1.setForeground(new java.awt.Color(35, 64, 102));
+        pointerApplyPanel1.setOpaque(false);
+
+        javax.swing.GroupLayout pointerApplyPanel1Layout = new javax.swing.GroupLayout(pointerApplyPanel1);
+        pointerApplyPanel1.setLayout(pointerApplyPanel1Layout);
+        pointerApplyPanel1Layout.setHorizontalGroup(
+            pointerApplyPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        pointerApplyPanel1Layout.setVerticalGroup(
+            pointerApplyPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        ApplyLabel1.setBackground(new java.awt.Color(35, 64, 102));
+        ApplyLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        ApplyLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ApplyLabel1.setText("Apply On Driver");
+
+        javax.swing.GroupLayout ApplyPanel1Layout = new javax.swing.GroupLayout(ApplyPanel1);
+        ApplyPanel1.setLayout(ApplyPanel1Layout);
+        ApplyPanel1Layout.setHorizontalGroup(
+            ApplyPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ApplyPanel1Layout.createSequentialGroup()
+                .addComponent(pointerApplyPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ApplyIconLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ApplyLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
+        );
+        ApplyPanel1Layout.setVerticalGroup(
+            ApplyPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pointerApplyPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(ApplyLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+            .addComponent(ApplyIconLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout ADCContentPanelLayout = new javax.swing.GroupLayout(ADCContentPanel);
         ADCContentPanel.setLayout(ADCContentPanelLayout);
         ADCContentPanelLayout.setHorizontalGroup(
             ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCContentPanelLayout.createSequentialGroup()
-                .addGap(0, 965, Short.MAX_VALUE)
-                .addComponent(exitLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCContentPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(333, 333, 333))
+            .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ADCContentPanelLayout.createSequentialGroup()
+                        .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(exitLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADCContentPanelLayout.createSequentialGroup()
+                        .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ApplyPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
         );
         ADCContentPanelLayout.setVerticalGroup(
             ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ADCContentPanelLayout.createSequentialGroup()
-                .addComponent(exitLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(149, 149, 149)
-                .addComponent(jLabel1)
-                .addContainerGap(513, Short.MAX_VALUE))
+                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                        .addComponent(exitLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                                .addGap(50, 50, 50)
+                                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel12)
+                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel13)
+                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(ADCContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel15)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel22)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel23)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 340, Short.MAX_VALUE)
+                        .addComponent(ApplyPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ADCContentPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jSeparator4)))
+                .addContainerGap())
         );
 
-        generalPanel.add(ADCContentPanel, "card2");
+        generalPanel.add(ADCContentPanel, "card3");
+
+        USARTContentPanel.setBackground(new java.awt.Color(82, 133, 212));
+        USARTContentPanel.setForeground(new java.awt.Color(82, 133, 212));
+        USARTContentPanel.setToolTipText("");
+
+        exitLabel2.setBackground(new java.awt.Color(82, 133, 212));
+        exitLabel2.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        exitLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        exitLabel2.setText("X");
+        exitLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                exitLabel2MouseMoved(evt);
+            }
+        });
+        exitLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                exitLabel2MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                exitLabel2MouseExited(evt);
+            }
+        });
+
+        jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel24.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Instructions");
+
+        jLabel25.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText("To Toggle The Pin  Direction (Output or Input), Click On the pin.");
+
+        jLabel26.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(254, 254, 254));
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel26.setText("If Pin Color is WHITE , The Pin Direction is INPUT");
+
+        jLabel27.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText("If Pin Color is BLACK , The Pin Direction is OUTPUT");
+
+        jLabel28.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText("PAx means Port Ax. EX. PA0 means Port A0 pin.");
+
+        jLabel29.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText("PBx means Port Ax. EX. PB3 means Port B3 pin.");
+
+        jLabel30.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("PCx means Port Cx. EX. PC1 means Port C1 pin.");
+
+        jLabel31.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setText("PDx means Port Dx. EX. PD7 means Port D7 pin.");
+
+        jLabel32.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(238, 192, 81));
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setText("To apply the changes on DIO Driver Click \"Apply On Driver\" Button.");
+
+        ApplyPanel2.setBackground(new java.awt.Color(35, 64, 102));
+        ApplyPanel2.setForeground(new java.awt.Color(35, 64, 102));
+        ApplyPanel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                ApplyPanel2MouseMoved(evt);
+            }
+        });
+        ApplyPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ApplyPanel2MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ApplyPanel2MouseExited(evt);
+            }
+        });
+
+        pointerApplyPanel2.setBackground(new java.awt.Color(255, 128, 0));
+        pointerApplyPanel2.setForeground(new java.awt.Color(35, 64, 102));
+        pointerApplyPanel2.setOpaque(false);
+
+        javax.swing.GroupLayout pointerApplyPanel2Layout = new javax.swing.GroupLayout(pointerApplyPanel2);
+        pointerApplyPanel2.setLayout(pointerApplyPanel2Layout);
+        pointerApplyPanel2Layout.setHorizontalGroup(
+            pointerApplyPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        pointerApplyPanel2Layout.setVerticalGroup(
+            pointerApplyPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        ApplyLabel2.setBackground(new java.awt.Color(35, 64, 102));
+        ApplyLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        ApplyLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ApplyLabel2.setText("Apply On Driver");
+
+        javax.swing.GroupLayout ApplyPanel2Layout = new javax.swing.GroupLayout(ApplyPanel2);
+        ApplyPanel2.setLayout(ApplyPanel2Layout);
+        ApplyPanel2Layout.setHorizontalGroup(
+            ApplyPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ApplyPanel2Layout.createSequentialGroup()
+                .addComponent(pointerApplyPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ApplyIconLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ApplyLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
+        );
+        ApplyPanel2Layout.setVerticalGroup(
+            ApplyPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pointerApplyPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(ApplyLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+            .addComponent(ApplyIconLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel33.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel33.setText("Voltage Refrence");
+
+        jLabel34.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel34.setText("Adjustment");
+
+        jLabel35.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel35.setText("Autotrigger Source");
+
+        jLabel36.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel36.setText("Prescaller");
+
+        jLabel37.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel37.setText("Channel Number");
+
+        jComboBox6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AVCC", "AREF", "INTERNAL" }));
+
+        jComboBox7.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Right Adjustment", "Left Adjustment" }));
+
+        jComboBox8.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Free Running Mode", "Analog Comparator", "External Interrupt Request 0", "Timer Counter 0 Compare Match", "Timer Counter 0 Overflow", "Timer Counter 0 Compare Match B", "Timer Counter 1 Overflow", "Timer Counter 1 Capture Event" }));
+
+        jComboBox9.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Divid By 2", "Divid By 4", "Divid By 8", "Divid By 16", "Divid By 32", "Divid By 64", "Divid By 128" }));
+        jComboBox9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox9ActionPerformed(evt);
+            }
+        });
+
+        jComboBox10.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Port A0", "Port A1", "Port A2", "Port A3", "Port A4", "Port A5", "Port A6", "Port A7" }));
+
+        javax.swing.GroupLayout USARTContentPanelLayout = new javax.swing.GroupLayout(USARTContentPanel);
+        USARTContentPanel.setLayout(USARTContentPanelLayout);
+        USARTContentPanelLayout.setHorizontalGroup(
+            USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, USARTContentPanelLayout.createSequentialGroup()
+                        .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(exitLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, USARTContentPanelLayout.createSequentialGroup()
+                        .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ApplyPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
+        );
+        USARTContentPanelLayout.setVerticalGroup(
+            USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                        .addComponent(exitLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel24)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel27)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel28)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel29)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel30)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel32)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 386, Short.MAX_VALUE)
+                        .addComponent(ApplyPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jSeparator5)))
+                .addContainerGap())
+            .addGroup(USARTContentPanelLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(USARTContentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel37)
+                    .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        generalPanel.add(USARTContentPanel, "card4");
 
         sidePanel.setBackground(new java.awt.Color(35, 64, 102));
         sidePanel.setForeground(new java.awt.Color(35, 64, 102));
@@ -1113,16 +1606,16 @@ public class CurrentProject extends javax.swing.JFrame {
             .addGroup(projectNamePanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(projectNamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(projectNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jSeparator1))
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                    .addComponent(projectNameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         projectNamePanelLayout.setVerticalGroup(
             projectNamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(projectNamePanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(18, 18, 18)
                 .addComponent(projectNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -1297,7 +1790,7 @@ public class CurrentProject extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addComponent(USARTIconLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(USARTLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
+                .addComponent(USARTLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                 .addContainerGap())
         );
         USARTPanelLayout.setVerticalGroup(
@@ -1333,19 +1826,31 @@ public class CurrentProject extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addComponent(sidePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(generalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(generalPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(259, 259, 259)
-                .addComponent(generalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(generalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -1387,30 +1892,6 @@ public class CurrentProject extends javax.swing.JFrame {
     private void USARTPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_USARTPanelMouseExited
         DV.exiteMouseStyle(USARTPanel, pointerUSARTPanel, USARTLabel);
     }//GEN-LAST:event_USARTPanelMouseExited
-
-    private void exitLabel3MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel3MouseMoved
-
-    private void exitLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel3MouseClicked
-
-    private void exitLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel3MouseExited
-
-    private void exitLabel4MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel4MouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel4MouseMoved
-
-    private void exitLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel4MouseClicked
-
-    private void exitLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel4MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitLabel4MouseExited
     int xx, xy;
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
         xx = evt.getX();
@@ -1428,7 +1909,14 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_ApplyPanelMouseExited
 
     private void ApplyPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanelMouseClicked
-        Dio.updateDIODriver();
+
+        if (Dio.isChanged() == true) {
+            applyStatus.setText("Successfully Applied !");
+            Dio.updateDIODriver();
+        } else {
+            applyStatus.setText("No Changes !");
+        }
+
     }//GEN-LAST:event_ApplyPanelMouseClicked
 
     private void ApplyPanelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanelMouseMoved
@@ -1449,413 +1937,491 @@ public class CurrentProject extends javax.swing.JFrame {
 
     private void PB0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseMoved
 
-        DVPB0.movingMouseStyle(PB0_Label, labelMovingColor, Dio.getPinColor(8));
+        DVP.movingMouseStyle(PB0_Label, labelMovingColor, Dio.getPinColor(8), 8);
     }//GEN-LAST:event_PB0_LabelMouseMoved
 
     private void PB0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseExited
-        DVPB0.exiteMouseStyle(PB0_Label);
+        DVP.exiteMouseStyle(PB0_Label, 8);
 
     }//GEN-LAST:event_PB0_LabelMouseExited
 
     private void PB1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseMoved
-        DVPB1.movingMouseStyle(PB1_Label, labelMovingColor, Dio.getPinColor(9));
+        DVP.movingMouseStyle(PB1_Label, labelMovingColor, Dio.getPinColor(9), 9);
     }//GEN-LAST:event_PB1_LabelMouseMoved
 
     private void PB1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseExited
-        DVPB1.exiteMouseStyle(PB1_Label);
+        DVP.exiteMouseStyle(PB1_Label, 9);
     }//GEN-LAST:event_PB1_LabelMouseExited
 
     private void PB2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseExited
-        DVPB2.exiteMouseStyle(PB2_Label);
+        DVP.exiteMouseStyle(PB2_Label, 10);
 
     }//GEN-LAST:event_PB2_LabelMouseExited
 
     private void PB2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseMoved
-        DVPB2.movingMouseStyle(PB2_Label, labelMovingColor, Dio.getPinColor(10));
+        DVP.movingMouseStyle(PB2_Label, labelMovingColor, Dio.getPinColor(10), 10);
     }//GEN-LAST:event_PB2_LabelMouseMoved
 
     private void PB3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseMoved
-        DVPB3.movingMouseStyle(PB3_Label, labelMovingColor, Dio.getPinColor(11));
+        DVP.movingMouseStyle(PB3_Label, labelMovingColor, Dio.getPinColor(11), 11);
     }//GEN-LAST:event_PB3_LabelMouseMoved
 
     private void PB3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseExited
-        DVPB3.exiteMouseStyle(PB3_Label);
+        DVP.exiteMouseStyle(PB3_Label, 11);
     }//GEN-LAST:event_PB3_LabelMouseExited
 
     private void PB4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseMoved
-        DVPB4.movingMouseStyle(PB4_Label, labelMovingColor, Dio.getPinColor(12));
+        DVP.movingMouseStyle(PB4_Label, labelMovingColor, Dio.getPinColor(12), 12);
     }//GEN-LAST:event_PB4_LabelMouseMoved
 
     private void PB4_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseExited
-        DVPB4.exiteMouseStyle(PB4_Label);
+        DVP.exiteMouseStyle(PB4_Label, 12);
     }//GEN-LAST:event_PB4_LabelMouseExited
 
     private void PB5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseMoved
-        DVPB5.movingMouseStyle(PB5_Label, labelMovingColor, Dio.getPinColor(13));
+        DVP.movingMouseStyle(PB5_Label, labelMovingColor, Dio.getPinColor(13), 13);
     }//GEN-LAST:event_PB5_LabelMouseMoved
 
     private void PB5_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseExited
-        DVPB5.exiteMouseStyle(PB5_Label);
+        DVP.exiteMouseStyle(PB5_Label, 12);
     }//GEN-LAST:event_PB5_LabelMouseExited
 
     private void PB6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseMoved
-        DVPB6.movingMouseStyle(PB6_Label, labelMovingColor, Dio.getPinColor(14));
+        DVP.movingMouseStyle(PB6_Label, labelMovingColor, Dio.getPinColor(14), 14);
     }//GEN-LAST:event_PB6_LabelMouseMoved
 
     private void PB6_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseExited
-        DVPB6.exiteMouseStyle(PB6_Label);
+        DVP.exiteMouseStyle(PB6_Label, 14);
     }//GEN-LAST:event_PB6_LabelMouseExited
 
     private void PB7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseMoved
-        DVPB7.movingMouseStyle(PB7_Label, labelMovingColor, Dio.getPinColor(15));
+        DVP.movingMouseStyle(PB7_Label, labelMovingColor, Dio.getPinColor(15), 15);
     }//GEN-LAST:event_PB7_LabelMouseMoved
 
     private void PB7_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseExited
-        DVPB7.exiteMouseStyle(PB7_Label);
+        DVP.exiteMouseStyle(PB7_Label, 15);
     }//GEN-LAST:event_PB7_LabelMouseExited
 
     private void PA0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseMoved
-        DVPA0.movingMouseStyle(PA0_Label, labelMovingColor, Dio.getPinColor(0));
+        DVP.movingMouseStyle(PA0_Label, labelMovingColor, Dio.getPinColor(0), 0);
     }//GEN-LAST:event_PA0_LabelMouseMoved
 
     private void PA1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseMoved
-        DVPA1.movingMouseStyle(PA1_Label, labelMovingColor, Dio.getPinColor(1));
+        DVP.movingMouseStyle(PA1_Label, labelMovingColor, Dio.getPinColor(1), 1);
     }//GEN-LAST:event_PA1_LabelMouseMoved
 
     private void PA2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseMoved
-        DVPA2.movingMouseStyle(PA2_Label, labelMovingColor, Dio.getPinColor(2));
+        DVP.movingMouseStyle(PA2_Label, labelMovingColor, Dio.getPinColor(2), 2);
     }//GEN-LAST:event_PA2_LabelMouseMoved
 
     private void PA3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseMoved
-        DVPA3.movingMouseStyle(PA3_Label, labelMovingColor, Dio.getPinColor(3));
+        DVP.movingMouseStyle(PA3_Label, labelMovingColor, Dio.getPinColor(3), 3);
 
     }//GEN-LAST:event_PA3_LabelMouseMoved
 
     private void PA4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA4_LabelMouseMoved
-        DVPA4.movingMouseStyle(PA4_Label, labelMovingColor, Dio.getPinColor(4));
+        DVP.movingMouseStyle(PA4_Label, labelMovingColor, Dio.getPinColor(4), 4);
     }//GEN-LAST:event_PA4_LabelMouseMoved
 
     private void PA5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA5_LabelMouseMoved
-        DVPA5.movingMouseStyle(PA5_Label, labelMovingColor, Dio.getPinColor(5));
+        DVP.movingMouseStyle(PA5_Label, labelMovingColor, Dio.getPinColor(5), 5);
     }//GEN-LAST:event_PA5_LabelMouseMoved
 
     private void PA6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA6_LabelMouseMoved
-        DVPA6.movingMouseStyle(PA6_Label, labelMovingColor, Dio.getPinColor(6));
+        DVP.movingMouseStyle(PA6_Label, labelMovingColor, Dio.getPinColor(6), 6);
     }//GEN-LAST:event_PA6_LabelMouseMoved
 
     private void PA7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA7_LabelMouseMoved
-        DVPA7.movingMouseStyle(PA7_Label, labelMovingColor, Dio.getPinColor(7));
+        DVP.movingMouseStyle(PA7_Label, labelMovingColor, Dio.getPinColor(7), 7);
     }//GEN-LAST:event_PA7_LabelMouseMoved
 
     private void PA0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseExited
-        DVPA0.exiteMouseStyle(PA0_Label);
+        DVP.exiteMouseStyle(PA0_Label, 0);
     }//GEN-LAST:event_PA0_LabelMouseExited
 
     private void PA1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseExited
-        DVPA1.exiteMouseStyle(PA1_Label);
+        DVP.exiteMouseStyle(PA1_Label, 1);
     }//GEN-LAST:event_PA1_LabelMouseExited
 
     private void PA2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseExited
-        DVPA2.exiteMouseStyle(PA2_Label);
-
-        
+        DVP.exiteMouseStyle(PA2_Label, 2);
     }//GEN-LAST:event_PA2_LabelMouseExited
 
     private void PA3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseExited
-        DVPA3.exiteMouseStyle(PA3_Label);
+        DVP.exiteMouseStyle(PA3_Label, 3);
     }//GEN-LAST:event_PA3_LabelMouseExited
 
     private void PA4_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA4_LabelMouseExited
-        DVPA4.exiteMouseStyle(PA4_Label);
+        DVP.exiteMouseStyle(PA4_Label, 4);
     }//GEN-LAST:event_PA4_LabelMouseExited
 
     private void PA5_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA5_LabelMouseExited
-        DVPA5.exiteMouseStyle(PA5_Label);
+        DVP.exiteMouseStyle(PA5_Label, 5);
     }//GEN-LAST:event_PA5_LabelMouseExited
 
     private void PA6_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA6_LabelMouseExited
-        DVPA6.exiteMouseStyle(PA6_Label);
+        DVP.exiteMouseStyle(PA6_Label, 6);
     }//GEN-LAST:event_PA6_LabelMouseExited
 
     private void PA7_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA7_LabelMouseExited
-        DVPA7.exiteMouseStyle(PA7_Label);
+        DVP.exiteMouseStyle(PA7_Label, 7);
     }//GEN-LAST:event_PA7_LabelMouseExited
 
     private void PC0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseMoved
-        DVPC0.movingMouseStyle(PC0_Label, labelMovingColor, Dio.getPinColor(16));
+        DVP.movingMouseStyle(PC0_Label, labelMovingColor, Dio.getPinColor(16), 16);
 
     }//GEN-LAST:event_PC0_LabelMouseMoved
 
     private void PC1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC1_LabelMouseMoved
-        DVPC1.movingMouseStyle(PC1_Label, labelMovingColor, Dio.getPinColor(17));
+        DVP.movingMouseStyle(PC1_Label, labelMovingColor, Dio.getPinColor(17), 17);
     }//GEN-LAST:event_PC1_LabelMouseMoved
 
     private void PC2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC2_LabelMouseMoved
-        DVPC2.movingMouseStyle(PC2_Label, labelMovingColor, Dio.getPinColor(18));
+        DVP.movingMouseStyle(PC2_Label, labelMovingColor, Dio.getPinColor(18), 18);
     }//GEN-LAST:event_PC2_LabelMouseMoved
 
     private void PC3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC3_LabelMouseMoved
-        DVPC3.movingMouseStyle(PC3_Label, labelMovingColor, Dio.getPinColor(19));
+        DVP.movingMouseStyle(PC3_Label, labelMovingColor, Dio.getPinColor(19), 19);
     }//GEN-LAST:event_PC3_LabelMouseMoved
 
     private void PC4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC4_LabelMouseMoved
-        DVPC4.movingMouseStyle(PC4_Label, labelMovingColor, Dio.getPinColor(20));
+        DVP.movingMouseStyle(PC4_Label, labelMovingColor, Dio.getPinColor(20), 20);
     }//GEN-LAST:event_PC4_LabelMouseMoved
 
     private void PC5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC5_LabelMouseMoved
-        DVPC5.movingMouseStyle(PC5_Label, labelMovingColor, Dio.getPinColor(21));
+        DVP.movingMouseStyle(PC5_Label, labelMovingColor, Dio.getPinColor(21), 21);
     }//GEN-LAST:event_PC5_LabelMouseMoved
 
     private void PC6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC6_LabelMouseMoved
-        DVPC6.movingMouseStyle(PC6_Label, labelMovingColor, Dio.getPinColor(22));
+        DVP.movingMouseStyle(PC6_Label, labelMovingColor, Dio.getPinColor(22), 22);
     }//GEN-LAST:event_PC6_LabelMouseMoved
 
     private void PC7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC7_LabelMouseMoved
-        DVPC7.movingMouseStyle(PC7_Label, labelMovingColor, Dio.getPinColor(23));
+        DVP.movingMouseStyle(PC7_Label, labelMovingColor, Dio.getPinColor(23), 23);
     }//GEN-LAST:event_PC7_LabelMouseMoved
 
     private void PC0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseExited
-        DVPC0.exiteMouseStyle(PC0_Label);
+        DVP.exiteMouseStyle(PC0_Label, 16);
     }//GEN-LAST:event_PC0_LabelMouseExited
 
     private void PC1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC1_LabelMouseExited
-        DVPC1.exiteMouseStyle(PC1_Label);
+        DVP.exiteMouseStyle(PC1_Label, 17);
 
     }//GEN-LAST:event_PC1_LabelMouseExited
 
     private void PC2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC2_LabelMouseExited
-        DVPC2.exiteMouseStyle(PC2_Label);
+        DVP.exiteMouseStyle(PC2_Label, 18);
     }//GEN-LAST:event_PC2_LabelMouseExited
 
     private void PC3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC3_LabelMouseExited
-        DVPC3.exiteMouseStyle(PC3_Label);
+        DVP.exiteMouseStyle(PC3_Label, 19);
     }//GEN-LAST:event_PC3_LabelMouseExited
 
     private void PC4_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC4_LabelMouseExited
-        DVPC4.exiteMouseStyle(PC4_Label);
+        DVP.exiteMouseStyle(PC4_Label, 20);
     }//GEN-LAST:event_PC4_LabelMouseExited
 
     private void PC5_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC5_LabelMouseExited
-        DVPC5.exiteMouseStyle(PC5_Label);
+        DVP.exiteMouseStyle(PC5_Label, 21);
     }//GEN-LAST:event_PC5_LabelMouseExited
 
     private void PC6_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC6_LabelMouseExited
-        DVPC6.exiteMouseStyle(PC6_Label);
+        DVP.exiteMouseStyle(PC6_Label, 22);
     }//GEN-LAST:event_PC6_LabelMouseExited
 
     private void PC7_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC7_LabelMouseExited
-        DVPC7.exiteMouseStyle(PC7_Label);
+        DVP.exiteMouseStyle(PC7_Label, 23);
     }//GEN-LAST:event_PC7_LabelMouseExited
 
     private void PD0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD0_LabelMouseMoved
-        DVPD0.movingMouseStyle(PD0_Label, labelMovingColor, Dio.getPinColor(24));
+        DVP.movingMouseStyle(PD0_Label, labelMovingColor, Dio.getPinColor(24), 24);
     }//GEN-LAST:event_PD0_LabelMouseMoved
 
     private void PD1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD1_LabelMouseMoved
-        DVPD1.movingMouseStyle(PD1_Label, labelMovingColor, Dio.getPinColor(25));
+        DVP.movingMouseStyle(PD1_Label, labelMovingColor, Dio.getPinColor(25), 25);
     }//GEN-LAST:event_PD1_LabelMouseMoved
 
     private void PD2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD2_LabelMouseMoved
-        DVPD2.movingMouseStyle(PD2_Label, labelMovingColor, Dio.getPinColor(26));
+        DVP.movingMouseStyle(PD2_Label, labelMovingColor, Dio.getPinColor(26), 26);
     }//GEN-LAST:event_PD2_LabelMouseMoved
 
     private void PD3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD3_LabelMouseMoved
-        DVPD3.movingMouseStyle(PD3_Label, labelMovingColor, Dio.getPinColor(27));
+        DVP.movingMouseStyle(PD3_Label, labelMovingColor, Dio.getPinColor(27), 27);
     }//GEN-LAST:event_PD3_LabelMouseMoved
 
     private void PD4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD4_LabelMouseMoved
-        DVPD4.movingMouseStyle(PD4_Label, labelMovingColor, Dio.getPinColor(28));
+        DVP.movingMouseStyle(PD4_Label, labelMovingColor, Dio.getPinColor(28), 28);
     }//GEN-LAST:event_PD4_LabelMouseMoved
 
     private void PD5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD5_LabelMouseMoved
-        DVPD5.movingMouseStyle(PD5_Label, labelMovingColor, Dio.getPinColor(29));
+        DVP.movingMouseStyle(PD5_Label, labelMovingColor, Dio.getPinColor(29), 29);
     }//GEN-LAST:event_PD5_LabelMouseMoved
 
     private void PD6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD6_LabelMouseMoved
-        DVPD6.movingMouseStyle(PD6_Label, labelMovingColor, Dio.getPinColor(30));
+        DVP.movingMouseStyle(PD6_Label, labelMovingColor, Dio.getPinColor(30), 30);
     }//GEN-LAST:event_PD6_LabelMouseMoved
 
     private void PD7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD7_LabelMouseMoved
-        DVPD7.movingMouseStyle(PD7_Label, labelMovingColor, Dio.getPinColor(31));
+        DVP.movingMouseStyle(PD7_Label, labelMovingColor, Dio.getPinColor(31), 31);
 
     }//GEN-LAST:event_PD7_LabelMouseMoved
 
     private void PD0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD0_LabelMouseExited
-        DVPD0.exiteMouseStyle(PD0_Label);
+        DVP.exiteMouseStyle(PD0_Label, 24);
     }//GEN-LAST:event_PD0_LabelMouseExited
 
     private void PD1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD1_LabelMouseExited
-        DVPD1.exiteMouseStyle(PD1_Label);
+        DVP.exiteMouseStyle(PD1_Label, 25);
     }//GEN-LAST:event_PD1_LabelMouseExited
 
     private void PD2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD2_LabelMouseExited
-        DVPD2.exiteMouseStyle(PD2_Label);
+        DVP.exiteMouseStyle(PD2_Label, 26);
     }//GEN-LAST:event_PD2_LabelMouseExited
 
     private void PD3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD3_LabelMouseExited
-        DVPD3.exiteMouseStyle(PD3_Label);
+        DVP.exiteMouseStyle(PD3_Label, 27);
     }//GEN-LAST:event_PD3_LabelMouseExited
 
     private void PD4_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD4_LabelMouseExited
-        DVPD4.exiteMouseStyle(PD4_Label);
+        DVP.exiteMouseStyle(PD4_Label, 28);
     }//GEN-LAST:event_PD4_LabelMouseExited
 
     private void PD5_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD5_LabelMouseExited
-        DVPD5.exiteMouseStyle(PD5_Label);
+        DVP.exiteMouseStyle(PD5_Label, 29);
     }//GEN-LAST:event_PD5_LabelMouseExited
 
     private void PD6_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD6_LabelMouseExited
-        DVPD6.exiteMouseStyle(PD6_Label);
+        DVP.exiteMouseStyle(PD6_Label, 30);
     }//GEN-LAST:event_PD6_LabelMouseExited
 
     private void PD7_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD7_LabelMouseExited
-        DVPD7.exiteMouseStyle(PD7_Label);
+        DVP.exiteMouseStyle(PD7_Label, 31);
     }//GEN-LAST:event_PD7_LabelMouseExited
 
     private void PA0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseClicked
-
-        DVPA0.setLabelColorBeforeChange(Dio.togglePinDirection(0, PA0_Label));
-
+        togglePinDirection(PA0_Label, 0);
     }//GEN-LAST:event_PA0_LabelMouseClicked
 
     private void PA1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseClicked
-
-        Dio.togglePinDirection(1, PA1_Label);
-
+        togglePinDirection(PA1_Label, 1);
     }//GEN-LAST:event_PA1_LabelMouseClicked
 
     private void PA2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseClicked
-
-        Dio.togglePinDirection(2, PA2_Label);
-
+        togglePinDirection(PA2_Label, 2);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(2, PA2_Label), 2);
     }//GEN-LAST:event_PA2_LabelMouseClicked
 
     private void PA3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseClicked
-        Dio.togglePinDirection(3, PA3_Label);
+        togglePinDirection(PA3_Label, 3);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(3, PA3_Label), 3);
     }//GEN-LAST:event_PA3_LabelMouseClicked
 
     private void PA4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA4_LabelMouseClicked
-        Dio.togglePinDirection(4, PA4_Label);
+        togglePinDirection(PA4_Label, 4);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(4, PA4_Label), 4);
     }//GEN-LAST:event_PA4_LabelMouseClicked
 
     private void PA5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA5_LabelMouseClicked
-        Dio.togglePinDirection(5, PA5_Label);
+        togglePinDirection(PA5_Label, 5);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(5, PA5_Label), 5);
     }//GEN-LAST:event_PA5_LabelMouseClicked
 
     private void PA6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA6_LabelMouseClicked
-        Dio.togglePinDirection(6, PA6_Label);
+        togglePinDirection(PA6_Label, 6);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(6, PA6_Label), 6);
     }//GEN-LAST:event_PA6_LabelMouseClicked
 
     private void PA7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA7_LabelMouseClicked
-        Dio.togglePinDirection(7, PA7_Label);
+        togglePinDirection(PA7_Label, 7);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(7, PA7_Label), 7);
     }//GEN-LAST:event_PA7_LabelMouseClicked
 
     private void PB0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseClicked
-        Dio.togglePinDirection(8, PB0_Label);
+        togglePinDirection(PB0_Label, 8);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(8, PB0_Label), 8);
     }//GEN-LAST:event_PB0_LabelMouseClicked
 
     private void PB1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseClicked
-        Dio.togglePinDirection(9, PB1_Label);
+        togglePinDirection(PB1_Label, 9);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(9, PB1_Label), 9);
     }//GEN-LAST:event_PB1_LabelMouseClicked
 
     private void PB2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseClicked
-        Dio.togglePinDirection(10, PB2_Label);
+        togglePinDirection(PB2_Label, 10);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(10, PB2_Label), 10);
     }//GEN-LAST:event_PB2_LabelMouseClicked
 
     private void PB3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseClicked
-        Dio.togglePinDirection(11, PB3_Label);
+        togglePinDirection(PB3_Label, 11);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(11, PB3_Label), 11);
     }//GEN-LAST:event_PB3_LabelMouseClicked
 
     private void PB4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseClicked
-        Dio.togglePinDirection(12, PB4_Label);
+        togglePinDirection(PB4_Label, 12);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(12, PB4_Label), 12);
     }//GEN-LAST:event_PB4_LabelMouseClicked
 
     private void PB5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseClicked
-        Dio.togglePinDirection(13, PB5_Label);
+        togglePinDirection(PB5_Label, 13);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(13, PB5_Label), 13);
     }//GEN-LAST:event_PB5_LabelMouseClicked
 
     private void PB6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseClicked
-        Dio.togglePinDirection(14, PB6_Label);
+        togglePinDirection(PB6_Label, 14);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(14, PB6_Label), 14);
     }//GEN-LAST:event_PB6_LabelMouseClicked
 
     private void PB7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseClicked
-        Dio.togglePinDirection(15, PB7_Label);
+        togglePinDirection(PB7_Label, 15);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(15, PB7_Label), 15);
     }//GEN-LAST:event_PB7_LabelMouseClicked
 
     private void PC0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseClicked
-        Dio.togglePinDirection(16, PC0_Label);
+        togglePinDirection(PC0_Label, 16);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(16, PC0_Label), 16);
     }//GEN-LAST:event_PC0_LabelMouseClicked
 
     private void PC1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC1_LabelMouseClicked
-        Dio.togglePinDirection(17, PC1_Label);
+        togglePinDirection(PC1_Label, 17);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(17, PC1_Label), 17);
     }//GEN-LAST:event_PC1_LabelMouseClicked
 
     private void PC2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC2_LabelMouseClicked
-        Dio.togglePinDirection(18, PC2_Label);
+        togglePinDirection(PC2_Label, 18);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(18, PC2_Label), 18);
     }//GEN-LAST:event_PC2_LabelMouseClicked
 
     private void PC3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC3_LabelMouseClicked
-        Dio.togglePinDirection(19, PC3_Label);
+        togglePinDirection(PC3_Label, 19);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(19, PC3_Label), 19);
     }//GEN-LAST:event_PC3_LabelMouseClicked
 
     private void PC4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC4_LabelMouseClicked
-        Dio.togglePinDirection(20, PC4_Label);
+        togglePinDirection(PC4_Label, 20);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(20, PC4_Label), 20);
     }//GEN-LAST:event_PC4_LabelMouseClicked
 
     private void PC5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC5_LabelMouseClicked
-        Dio.togglePinDirection(21, PC5_Label);
+        togglePinDirection(PC5_Label, 21);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(21, PC5_Label), 21);
     }//GEN-LAST:event_PC5_LabelMouseClicked
 
     private void PC6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC6_LabelMouseClicked
-        Dio.togglePinDirection(22, PC6_Label);
+        togglePinDirection(PC6_Label, 22);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(22, PC6_Label), 22);
     }//GEN-LAST:event_PC6_LabelMouseClicked
 
     private void PC7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC7_LabelMouseClicked
-        Dio.togglePinDirection(23, PC7_Label);
+        togglePinDirection(PC7_Label, 23);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(23, PC7_Label), 23);
     }//GEN-LAST:event_PC7_LabelMouseClicked
 
     private void PD0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD0_LabelMouseClicked
-        Dio.togglePinDirection(24, PD0_Label);
+        togglePinDirection(PD0_Label, 24);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(24, PD0_Label), 24);
     }//GEN-LAST:event_PD0_LabelMouseClicked
 
     private void PD1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD1_LabelMouseClicked
-        Dio.togglePinDirection(25, PD1_Label);
+        togglePinDirection(PD1_Label, 25);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(25, PD1_Label), 25);
     }//GEN-LAST:event_PD1_LabelMouseClicked
 
     private void PD2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD2_LabelMouseClicked
-        Dio.togglePinDirection(26, PD2_Label);
+        togglePinDirection(PD2_Label, 26);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(26, PD2_Label), 26);
     }//GEN-LAST:event_PD2_LabelMouseClicked
 
     private void PD3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD3_LabelMouseClicked
-        Dio.togglePinDirection(27, PD3_Label);
+        togglePinDirection(PD3_Label, 27);
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(27, PD3_Label), 27);
     }//GEN-LAST:event_PD3_LabelMouseClicked
 
     private void PD4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD4_LabelMouseClicked
-        Dio.togglePinDirection(28, PD4_Label);
+        togglePinDirection(PD4_Label, 28);
     }//GEN-LAST:event_PD4_LabelMouseClicked
 
     private void PD5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD5_LabelMouseClicked
-        Dio.togglePinDirection(29, PD5_Label);
+        togglePinDirection(PD5_Label, 29);
     }//GEN-LAST:event_PD5_LabelMouseClicked
 
     private void PD6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD6_LabelMouseClicked
-        Dio.togglePinDirection(30, PD6_Label);
+        togglePinDirection(PD6_Label, 30);
     }//GEN-LAST:event_PD6_LabelMouseClicked
 
     private void PD7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD7_LabelMouseClicked
-        Dio.togglePinDirection(31, PD7_Label);
+        togglePinDirection(PD7_Label, 31);
     }//GEN-LAST:event_PD7_LabelMouseClicked
 
-    public void getPinsDirection() {
-        System.out.println("getPinsDirection method");
+    private void exitLabel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel1MouseMoved
+        exitLabel1.setForeground(Color.RED);
+    }//GEN-LAST:event_exitLabel1MouseMoved
 
+    private void exitLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel1MouseClicked
+        this.dispose();
+    }//GEN-LAST:event_exitLabel1MouseClicked
+
+    private void exitLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel1MouseExited
+        exitLabel1.setForeground(Color.BLACK);
+    }//GEN-LAST:event_exitLabel1MouseExited
+
+    private void exitLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel2MouseMoved
+        exitLabel2.setForeground(Color.RED);
+    }//GEN-LAST:event_exitLabel2MouseMoved
+
+    private void exitLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel2MouseClicked
+        this.dispose();
+    }//GEN-LAST:event_exitLabel2MouseClicked
+
+    private void exitLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel2MouseExited
+        exitLabel2.setForeground(Color.BLACK);
+    }//GEN-LAST:event_exitLabel2MouseExited
+
+    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox4ActionPerformed
+
+    private void ApplyPanel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel1MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel1MouseMoved
+
+    private void ApplyPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel1MouseClicked
+
+    private void ApplyPanel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel1MouseExited
+
+    private void ApplyPanel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel2MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel2MouseMoved
+
+    private void ApplyPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel2MouseClicked
+
+    private void ApplyPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanel2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ApplyPanel2MouseExited
+
+    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox9ActionPerformed
+
+    public void getPinsDirection() {
         Dio.setCurrentFile(currentFile);
         JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
         Dio.getDriverElementsValues();
         Dio.setPinDirectionColor(PinDirectionLabel);
+    }
 
-        System.out.println("getPinsDirection method end");
-
+    public void togglePinDirection(JLabel PinDirectionLabel, int pinNum) {
+        DVP.setLabelColorBeforeChange(Dio.togglePinDirection(pinNum, PinDirectionLabel), pinNum);
+        if (Dio.isChanged() == true) {
+            applyStatus.setText("Changes Happened, Click Apply");
+        } else {
+            applyStatus.setText("");
+        }
     }
 
     /**
@@ -1901,8 +2467,14 @@ public class CurrentProject extends javax.swing.JFrame {
     private javax.swing.JPanel ADCPanel;
     private javax.swing.JLabel AVRIcon;
     private javax.swing.JLabel ApplyIconLabel;
+    private javax.swing.JLabel ApplyIconLabel1;
+    private javax.swing.JLabel ApplyIconLabel2;
     private javax.swing.JLabel ApplyLabel;
+    private javax.swing.JLabel ApplyLabel1;
+    private javax.swing.JLabel ApplyLabel2;
     private javax.swing.JPanel ApplyPanel;
+    private javax.swing.JPanel ApplyPanel1;
+    private javax.swing.JPanel ApplyPanel2;
     private javax.swing.JPanel DIOContentPanel;
     private javax.swing.JLabel DIOIconLabel;
     private javax.swing.JLabel DIOLabel;
@@ -1943,20 +2515,67 @@ public class CurrentProject extends javax.swing.JFrame {
     private javax.swing.JLabel USARTIconLabel;
     private javax.swing.JLabel USARTLabel;
     private javax.swing.JPanel USARTPanel;
+    private javax.swing.JLabel applyStatus;
     private javax.swing.JLabel exitLabel;
-    private javax.swing.JLabel exitLabel3;
-    private javax.swing.JLabel exitLabel4;
+    private javax.swing.JLabel exitLabel1;
+    private javax.swing.JLabel exitLabel2;
     private javax.swing.JPanel generalPanel;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox10;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
+    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel pointerADCPanel;
     private javax.swing.JPanel pointerApplyPanel;
+    private javax.swing.JPanel pointerApplyPanel1;
+    private javax.swing.JPanel pointerApplyPanel2;
     private javax.swing.JPanel pointerDIOPanel;
     private javax.swing.JPanel pointerUSARTPanel;
     private javax.swing.JLabel projectNameLabel;

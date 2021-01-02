@@ -825,7 +825,7 @@ public class EasyMCU extends javax.swing.JFrame {
     }//GEN-LAST:event_exitLabel2MouseClicked
 
     private void exitLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel2MouseExited
-        exitLabel2.setForeground(Color.black);
+        exitLabel2.setForeground(Color.BLACK);
     }//GEN-LAST:event_exitLabel2MouseExited
 
     private void LearnPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LearnPanelMouseClicked
@@ -841,7 +841,7 @@ public class EasyMCU extends javax.swing.JFrame {
     }//GEN-LAST:event_exitLabel3MouseClicked
 
     private void exitLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseExited
-        DV.exiteMouseStyle(exitLabel3);
+       exitLabel3.setForeground(Color.BLACK);
     }//GEN-LAST:event_exitLabel3MouseExited
 
     private void AboutPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AboutPanelMouseClicked

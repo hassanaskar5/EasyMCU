@@ -34,7 +34,7 @@ public class DIO extends UpdateDriver {
     private String config[] = {PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_INPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString(), PIN_DIR.DIO_u8_OUTPUT.toString()};
     private Color pinColors[] = new Color[32];
     private String CurrentFile;
-
+    private Boolean isChanged=false;
     public void setCurrentFile(String currentFile) {
         CurrentFile = currentFile;
     }
@@ -73,8 +73,13 @@ public class DIO extends UpdateDriver {
         }
     }
 
+    public Boolean isChanged() {
+        return isChanged;
+    }
+
     public Color togglePinDirection(int pinNum, JLabel PinDirectionLabel) {
-        Color labelColorBeforeChange=null;
+        isChanged= true;
+        Color labelColorBeforeChange = null;
         //processing
         if (config[pinNum].equals(PIN_DIR.DIO_u8_INPUT.toString())) {
             config[pinNum] = PIN_DIR.DIO_u8_OUTPUT.toString();
@@ -95,9 +100,8 @@ public class DIO extends UpdateDriver {
      * and determining the specific parameter for DIO driver
      */
     public void updateDIODriver() {
-        System.out.println("updateDIODriver method start" + CurrentFile);
-
         super.updateDriver("DIO_config.h", element.length, element, config, CurrentFile);
+        isChanged=false;
     }
 
 }
