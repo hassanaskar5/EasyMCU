@@ -15,16 +15,15 @@ import javax.swing.JPanel;
  */
 public class DynamicView {
 
-    private Color mainPanelColorBeforeChange, labelColorBeforeChange, labelColorAfterChange;
+    private Color mainPanelColorBeforeChange, labelColorBeforeChange;
     private Boolean isClicked = false;
-
-    public void setLabelColorAfterChange(Color labelColorAfterChange) {
-        this.labelColorAfterChange = labelColorAfterChange;
+    private int pinNum;
+    private Color pinColors[] = new Color[32];
+    
+    public void setLabelColorBeforeChange(Color labelColorBeforeChange) {
+        this.labelColorBeforeChange = labelColorBeforeChange;
     }
 
-    public Color getMainPanelColorBeforeChange() {
-        return mainPanelColorBeforeChange;
-    }
 
     public Color getLabelColorBeforeChange() {
         return labelColorBeforeChange;
@@ -35,12 +34,6 @@ public class DynamicView {
         labelColorBeforeChange = labelColorBeforeChange == null ? label.getForeground() : labelColorBeforeChange;
         mainPanel.setBackground(panelMovingColor);
         pointerPanel.setOpaque(true);
-        label.setForeground(labelMovingColor);
-    }
-
-    public void movingMouseStyle(JLabel label, Color labelMovingColor) {
-        labelColorBeforeChange = labelColorBeforeChange == null ? label.getForeground() : labelColorBeforeChange;
-
         label.setForeground(labelMovingColor);
     }
     
@@ -56,20 +49,12 @@ public class DynamicView {
         label.setForeground(labelColorBeforeChange);
     }
 
-    public Boolean getIsClicked() {
-        return isClicked;
-    }
 
-    public void setIsClicked(Boolean isClicked) {
-        this.isClicked = isClicked;
-    }
 
     public void exiteMouseStyle(JLabel label) {
-        if (getIsClicked() == true) {
-            label.setForeground(labelColorAfterChange);
-        } else {
+
             label.setForeground(labelColorBeforeChange);
-        }
+        
     }
 
     public void switchPanelTo(JPanel generalPanel, JPanel panel) {

@@ -57,7 +57,7 @@ abstract class UpdateDriver {
             }
             fr.close();
             br.close();
-            FileWriter fw = new FileWriter(f2);
+            FileWriter fw = new FileWriter(f1);
             BufferedWriter out = new BufferedWriter(fw);
             for (String s : lines) {
                 out.write(s);

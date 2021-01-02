@@ -93,7 +93,7 @@
                           <Component id="PB4_Label" min="-2" max="-2" attributes="0"/>
                           <Component id="PB5_Label" min="-2" max="-2" attributes="0"/>
                           <Component id="PB6_Label" min="-2" max="-2" attributes="0"/>
-                          <Component id="PB7_Label5" min="-2" max="-2" attributes="0"/>
+                          <Component id="PB7_Label" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="AVRIcon" min="-2" max="-2" attributes="0"/>
@@ -160,7 +160,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="PB6_Label" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="PB7_Label5" min="-2" max="-2" attributes="0"/>
+                              <Component id="PB7_Label" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="PD0_Label" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -286,6 +286,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB0_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB0_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB0_LabelMouseExited"/>
               </Events>
             </Component>
@@ -302,6 +303,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB2_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB2_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB2_LabelMouseExited"/>
               </Events>
             </Component>
@@ -369,6 +371,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PA3_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA3_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA3_LabelMouseExited"/>
               </Events>
             </Component>
@@ -385,6 +388,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PA4_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA4_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA4_LabelMouseExited"/>
               </Events>
             </Component>
@@ -401,6 +405,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PA5_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA5_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA5_LabelMouseExited"/>
               </Events>
             </Component>
@@ -417,6 +422,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PA6_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA6_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA6_LabelMouseExited"/>
               </Events>
             </Component>
@@ -433,6 +439,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PA7_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA7_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PA7_LabelMouseExited"/>
               </Events>
             </Component>
@@ -449,6 +456,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC7_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC7_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC7_LabelMouseExited"/>
               </Events>
             </Component>
@@ -465,6 +473,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC6_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC6_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC6_LabelMouseExited"/>
               </Events>
             </Component>
@@ -481,6 +490,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC5_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC5_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC5_LabelMouseExited"/>
               </Events>
             </Component>
@@ -497,6 +507,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC4_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC4_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC4_LabelMouseExited"/>
               </Events>
             </Component>
@@ -513,6 +524,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC3_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC3_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC3_LabelMouseExited"/>
               </Events>
             </Component>
@@ -529,6 +541,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC2_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC2_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC2_LabelMouseExited"/>
               </Events>
             </Component>
@@ -545,6 +558,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC1_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC1_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC1_LabelMouseExited"/>
               </Events>
             </Component>
@@ -561,6 +575,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PC0_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC0_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PC0_LabelMouseExited"/>
               </Events>
             </Component>
@@ -577,6 +592,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD0_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD0_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD0_LabelMouseExited"/>
               </Events>
             </Component>
@@ -593,6 +609,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD1_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD1_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD1_LabelMouseExited"/>
               </Events>
             </Component>
@@ -609,6 +626,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD2_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD2_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD2_LabelMouseExited"/>
               </Events>
             </Component>
@@ -625,6 +643,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD3_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD3_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD3_LabelMouseExited"/>
               </Events>
             </Component>
@@ -641,6 +660,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD4_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD4_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD4_LabelMouseExited"/>
               </Events>
             </Component>
@@ -657,6 +677,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD5_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD5_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD5_LabelMouseExited"/>
               </Events>
             </Component>
@@ -673,6 +694,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD6_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD6_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD6_LabelMouseExited"/>
               </Events>
             </Component>
@@ -689,6 +711,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PD7_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD7_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PD7_LabelMouseExited"/>
               </Events>
             </Component>
@@ -827,10 +850,11 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB1"/>
-                <Property name="name" type="java.lang.String" value="PB0" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB1" noResource="true"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB1_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB1_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB1_LabelMouseExited"/>
               </Events>
             </Component>
@@ -843,10 +867,11 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB2"/>
-                <Property name="name" type="java.lang.String" value="PB2" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB3" noResource="true"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB3_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB3_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB3_LabelMouseExited"/>
               </Events>
             </Component>
@@ -859,10 +884,11 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB2"/>
-                <Property name="name" type="java.lang.String" value="PB2" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB4" noResource="true"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB4_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB4_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB4_LabelMouseExited"/>
               </Events>
             </Component>
@@ -875,10 +901,11 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB2"/>
-                <Property name="name" type="java.lang.String" value="PB2" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB5" noResource="true"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB5_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB5_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB5_LabelMouseExited"/>
               </Events>
             </Component>
@@ -891,14 +918,15 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB2"/>
-                <Property name="name" type="java.lang.String" value="PB2" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB6" noResource="true"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB6_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB6_LabelMouseClicked"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB6_LabelMouseExited"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="PB7_Label5">
+            <Component class="javax.swing.JLabel" name="PB7_Label">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="13" style="1"/>
@@ -907,11 +935,12 @@
                   <Color blue="fe" green="fe" red="fe" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PB2"/>
-                <Property name="name" type="java.lang.String" value="PB2" noResource="true"/>
+                <Property name="name" type="java.lang.String" value="PB7" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB7_Label5MouseMoved"/>
-                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB7_Label5MouseExited"/>
+                <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="PB7_LabelMouseMoved"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB7_LabelMouseClicked"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PB7_LabelMouseExited"/>
               </Events>
             </Component>
           </SubComponents>

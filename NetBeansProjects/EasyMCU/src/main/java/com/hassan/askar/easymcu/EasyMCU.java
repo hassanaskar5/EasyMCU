@@ -784,12 +784,9 @@ public class EasyMCU extends javax.swing.JFrame {
         try {
             String Location=(String) jTable1.getValueAt(jTable1.getSelectedRow(), 1), Name=(String) jTable1.getValueAt(jTable1.getSelectedRow(), 0);
             errorLabel.setText("");
-            System.out.println("1");
             CurrentProject project = new CurrentProject(Location,Name);
-            System.out.println("2");
             project.setVisible(true);
         } catch (Exception e) {
-             System.out.println("6");
             errorLabel.setText("Please choose a Project");
         }
     }//GEN-LAST:event_openProjectPanelMouseClicked
@@ -836,7 +833,7 @@ public class EasyMCU extends javax.swing.JFrame {
     }//GEN-LAST:event_LearnPanelMouseClicked
 
     private void exitLabel3MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseMoved
-        DV.movingMouseStyle(exitLabel3, Color.red);
+        exitLabel3.setForeground(Color.red);
     }//GEN-LAST:event_exitLabel3MouseMoved
 
     private void exitLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitLabel3MouseClicked

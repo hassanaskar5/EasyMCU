@@ -41,7 +41,6 @@ public class DIO extends UpdateDriver {
 
     //DIO Methods
     public void getDriverElementsValues() {
-        System.out.println(CurrentFile);
         config = getDriverInfo("DIO_config.h", element.length, element, CurrentFile);
         setPinColors();
     }
@@ -56,10 +55,13 @@ public class DIO extends UpdateDriver {
         }
     }
 
+    public Color getPinColor(int pinNum) {
+        return pinColors[pinNum];
+    }
+
     public void setPinDirectionColor(JLabel[] PinDirectionLabel) {
 
         for (int i = 0; i < PinDirectionLabel.length; i++) {
-            System.out.println(config[i] + " " + pinColors[i]);
             if (config[i].contains("DIO_u8_OUTPUT")) {
                 PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " OUTPUT");
                 PinDirectionLabel[i].setForeground(pinColors[i]);
@@ -71,29 +73,21 @@ public class DIO extends UpdateDriver {
         }
     }
 
-    public Color togglePinValue(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
-        Color labelColorAfterChange = labelColorBeforeChange;
-        //feedback
-        System.out.println(labelColorBeforeChange.toString());
-        System.out.println(config[pinNum]);
-
+    public Color togglePinDirection(int pinNum, JLabel PinDirectionLabel) {
+        Color labelColorBeforeChange=null;
         //processing
-        if (labelColorBeforeChange == Color.WHITE) {
+        if (config[pinNum].equals(PIN_DIR.DIO_u8_INPUT.toString())) {
             config[pinNum] = PIN_DIR.DIO_u8_OUTPUT.toString();
+            pinColors[pinNum] = Color.BLACK;
+            labelColorBeforeChange = Color.BLACK;
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " OUTPUT");
-            PinDirectionLabel.setForeground(Color.BLACK);
-            labelColorAfterChange = Color.BLACK;
-
-        } else if (labelColorBeforeChange == Color.BLACK) {
+        } else if (config[pinNum].equals(PIN_DIR.DIO_u8_OUTPUT.toString())) {
             config[pinNum] = PIN_DIR.DIO_u8_INPUT.toString();
+            pinColors[pinNum] = Color.WHITE;
+            labelColorBeforeChange = Color.WHITE;
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " INPUT");
-            PinDirectionLabel.setForeground(Color.WHITE);
-            labelColorAfterChange = Color.WHITE;
-
         }
-        System.out.println(config[pinNum]);
-        updateDIODriver();
-        return labelColorAfterChange;
+        return labelColorBeforeChange;
     }
 
     /**
@@ -101,6 +95,8 @@ public class DIO extends UpdateDriver {
      * and determining the specific parameter for DIO driver
      */
     public void updateDIODriver() {
+        System.out.println("updateDIODriver method start" + CurrentFile);
+
         super.updateDriver("DIO_config.h", element.length, element, config, CurrentFile);
     }
 

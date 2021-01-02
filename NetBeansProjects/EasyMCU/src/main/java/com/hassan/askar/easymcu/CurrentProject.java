@@ -130,7 +130,7 @@ public class CurrentProject extends javax.swing.JFrame {
         PB4_Label = new javax.swing.JLabel();
         PB5_Label = new javax.swing.JLabel();
         PB6_Label = new javax.swing.JLabel();
-        PB7_Label5 = new javax.swing.JLabel();
+        PB7_Label = new javax.swing.JLabel();
         USARTContentPanel = new javax.swing.JPanel();
         exitLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -205,6 +205,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PB0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB0_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB0_LabelMouseExited(evt);
             }
@@ -220,6 +223,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PB2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB2_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB2_LabelMouseExited(evt);
             }
@@ -289,6 +295,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PA3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PA3_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PA3_LabelMouseExited(evt);
             }
@@ -304,6 +313,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PA4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PA4_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PA4_LabelMouseExited(evt);
             }
@@ -319,6 +331,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PA5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PA5_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PA5_LabelMouseExited(evt);
             }
@@ -334,6 +349,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PA6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PA6_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PA6_LabelMouseExited(evt);
             }
@@ -349,6 +367,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PA7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PA7_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PA7_LabelMouseExited(evt);
             }
@@ -364,6 +385,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC7_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC7_LabelMouseExited(evt);
             }
@@ -379,6 +403,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC6_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC6_LabelMouseExited(evt);
             }
@@ -394,6 +421,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC5_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC5_LabelMouseExited(evt);
             }
@@ -409,6 +439,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC4_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC4_LabelMouseExited(evt);
             }
@@ -424,6 +457,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC3_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC3_LabelMouseExited(evt);
             }
@@ -439,6 +475,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC2_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC2_LabelMouseExited(evt);
             }
@@ -454,6 +493,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC1_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC1_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC1_LabelMouseExited(evt);
             }
@@ -469,6 +511,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PC0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PC0_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PC0_LabelMouseExited(evt);
             }
@@ -484,6 +529,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD0_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD0_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD0_LabelMouseExited(evt);
             }
@@ -499,6 +547,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD1_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD1_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD1_LabelMouseExited(evt);
             }
@@ -514,6 +565,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD2_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD2_LabelMouseExited(evt);
             }
@@ -529,6 +583,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD3_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD3_LabelMouseExited(evt);
             }
@@ -544,6 +601,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD4_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD4_LabelMouseExited(evt);
             }
@@ -559,6 +619,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD5_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD5_LabelMouseExited(evt);
             }
@@ -574,6 +637,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD6_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD6_LabelMouseExited(evt);
             }
@@ -589,6 +655,9 @@ public class CurrentProject extends javax.swing.JFrame {
             }
         });
         PD7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PD7_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PD7_LabelMouseExited(evt);
             }
@@ -670,13 +739,16 @@ public class CurrentProject extends javax.swing.JFrame {
         PB1_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PB1_Label.setForeground(new java.awt.Color(254, 254, 254));
         PB1_Label.setText("PB1");
-        PB1_Label.setName("PB0"); // NOI18N
+        PB1_Label.setName("PB1"); // NOI18N
         PB1_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 PB1_LabelMouseMoved(evt);
             }
         });
         PB1_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB1_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB1_LabelMouseExited(evt);
             }
@@ -685,13 +757,16 @@ public class CurrentProject extends javax.swing.JFrame {
         PB3_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PB3_Label.setForeground(new java.awt.Color(254, 254, 254));
         PB3_Label.setText("PB2");
-        PB3_Label.setName("PB2"); // NOI18N
+        PB3_Label.setName("PB3"); // NOI18N
         PB3_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 PB3_LabelMouseMoved(evt);
             }
         });
         PB3_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB3_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB3_LabelMouseExited(evt);
             }
@@ -700,13 +775,16 @@ public class CurrentProject extends javax.swing.JFrame {
         PB4_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PB4_Label.setForeground(new java.awt.Color(254, 254, 254));
         PB4_Label.setText("PB2");
-        PB4_Label.setName("PB2"); // NOI18N
+        PB4_Label.setName("PB4"); // NOI18N
         PB4_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 PB4_LabelMouseMoved(evt);
             }
         });
         PB4_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB4_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB4_LabelMouseExited(evt);
             }
@@ -715,13 +793,16 @@ public class CurrentProject extends javax.swing.JFrame {
         PB5_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PB5_Label.setForeground(new java.awt.Color(254, 254, 254));
         PB5_Label.setText("PB2");
-        PB5_Label.setName("PB2"); // NOI18N
+        PB5_Label.setName("PB5"); // NOI18N
         PB5_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 PB5_LabelMouseMoved(evt);
             }
         });
         PB5_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB5_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB5_LabelMouseExited(evt);
             }
@@ -730,30 +811,36 @@ public class CurrentProject extends javax.swing.JFrame {
         PB6_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         PB6_Label.setForeground(new java.awt.Color(254, 254, 254));
         PB6_Label.setText("PB2");
-        PB6_Label.setName("PB2"); // NOI18N
+        PB6_Label.setName("PB6"); // NOI18N
         PB6_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 PB6_LabelMouseMoved(evt);
             }
         });
         PB6_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB6_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 PB6_LabelMouseExited(evt);
             }
         });
 
-        PB7_Label5.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB7_Label5.setForeground(new java.awt.Color(254, 254, 254));
-        PB7_Label5.setText("PB2");
-        PB7_Label5.setName("PB2"); // NOI18N
-        PB7_Label5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        PB7_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        PB7_Label.setForeground(new java.awt.Color(254, 254, 254));
+        PB7_Label.setText("PB2");
+        PB7_Label.setName("PB7"); // NOI18N
+        PB7_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB7_Label5MouseMoved(evt);
+                PB7_LabelMouseMoved(evt);
             }
         });
-        PB7_Label5.addMouseListener(new java.awt.event.MouseAdapter() {
+        PB7_Label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PB7_LabelMouseClicked(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB7_Label5MouseExited(evt);
+                PB7_LabelMouseExited(evt);
             }
         });
 
@@ -781,7 +868,7 @@ public class CurrentProject extends javax.swing.JFrame {
                     .addComponent(PB4_Label)
                     .addComponent(PB5_Label)
                     .addComponent(PB6_Label)
-                    .addComponent(PB7_Label5))
+                    .addComponent(PB7_Label))
                 .addGap(18, 18, 18)
                 .addComponent(AVRIcon)
                 .addGap(18, 18, 18)
@@ -840,7 +927,7 @@ public class CurrentProject extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(PB6_Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(PB7_Label5)
+                        .addComponent(PB7_Label)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(PD0_Label)
                         .addGap(18, 18, 18)
@@ -1341,7 +1428,7 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_ApplyPanelMouseExited
 
     private void ApplyPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanelMouseClicked
-
+        Dio.updateDIODriver();
     }//GEN-LAST:event_ApplyPanelMouseClicked
 
     private void ApplyPanelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ApplyPanelMouseMoved
@@ -1362,7 +1449,7 @@ public class CurrentProject extends javax.swing.JFrame {
 
     private void PB0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseMoved
 
-        DVPB0.movingMouseStyle(PB0_Label, labelMovingColor);
+        DVPB0.movingMouseStyle(PB0_Label, labelMovingColor, Dio.getPinColor(8));
     }//GEN-LAST:event_PB0_LabelMouseMoved
 
     private void PB0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseExited
@@ -1371,7 +1458,7 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PB0_LabelMouseExited
 
     private void PB1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseMoved
-        DVPB1.movingMouseStyle(PB1_Label, labelMovingColor);
+        DVPB1.movingMouseStyle(PB1_Label, labelMovingColor, Dio.getPinColor(9));
     }//GEN-LAST:event_PB1_LabelMouseMoved
 
     private void PB1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseExited
@@ -1384,11 +1471,11 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PB2_LabelMouseExited
 
     private void PB2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseMoved
-        DVPB2.movingMouseStyle(PB2_Label, labelMovingColor);
+        DVPB2.movingMouseStyle(PB2_Label, labelMovingColor, Dio.getPinColor(10));
     }//GEN-LAST:event_PB2_LabelMouseMoved
 
     private void PB3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseMoved
-        DVPB3.movingMouseStyle(PB3_Label, labelMovingColor);
+        DVPB3.movingMouseStyle(PB3_Label, labelMovingColor, Dio.getPinColor(11));
     }//GEN-LAST:event_PB3_LabelMouseMoved
 
     private void PB3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseExited
@@ -1396,7 +1483,7 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PB3_LabelMouseExited
 
     private void PB4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseMoved
-        DVPB4.movingMouseStyle(PB4_Label, labelMovingColor);
+        DVPB4.movingMouseStyle(PB4_Label, labelMovingColor, Dio.getPinColor(12));
     }//GEN-LAST:event_PB4_LabelMouseMoved
 
     private void PB4_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseExited
@@ -1404,7 +1491,7 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PB4_LabelMouseExited
 
     private void PB5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseMoved
-        DVPB5.movingMouseStyle(PB5_Label, labelMovingColor);
+        DVPB5.movingMouseStyle(PB5_Label, labelMovingColor, Dio.getPinColor(13));
     }//GEN-LAST:event_PB5_LabelMouseMoved
 
     private void PB5_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseExited
@@ -1412,59 +1499,56 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PB5_LabelMouseExited
 
     private void PB6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseMoved
-        DVPB6.movingMouseStyle(PB6_Label, labelMovingColor);
+        DVPB6.movingMouseStyle(PB6_Label, labelMovingColor, Dio.getPinColor(14));
     }//GEN-LAST:event_PB6_LabelMouseMoved
 
     private void PB6_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseExited
         DVPB6.exiteMouseStyle(PB6_Label);
     }//GEN-LAST:event_PB6_LabelMouseExited
 
-    private void PB7_Label5MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_Label5MouseMoved
-        DVPB7.movingMouseStyle(PB7_Label5, labelMovingColor);
-    }//GEN-LAST:event_PB7_Label5MouseMoved
+    private void PB7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseMoved
+        DVPB7.movingMouseStyle(PB7_Label, labelMovingColor, Dio.getPinColor(15));
+    }//GEN-LAST:event_PB7_LabelMouseMoved
 
-    private void PB7_Label5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_Label5MouseExited
-        DVPB7.exiteMouseStyle(PB7_Label5);
-    }//GEN-LAST:event_PB7_Label5MouseExited
+    private void PB7_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseExited
+        DVPB7.exiteMouseStyle(PB7_Label);
+    }//GEN-LAST:event_PB7_LabelMouseExited
 
     private void PA0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseMoved
-        DVPA0.movingMouseStyle(PA0_Label, labelMovingColor);
-        // DVPA0.setIsClicked(false);
-        System.out.println("Moving");
+        DVPA0.movingMouseStyle(PA0_Label, labelMovingColor, Dio.getPinColor(0));
     }//GEN-LAST:event_PA0_LabelMouseMoved
 
     private void PA1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseMoved
-        DVPA1.movingMouseStyle(PA1_Label, labelMovingColor);
+        DVPA1.movingMouseStyle(PA1_Label, labelMovingColor, Dio.getPinColor(1));
     }//GEN-LAST:event_PA1_LabelMouseMoved
 
     private void PA2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseMoved
-        DVPA2.movingMouseStyle(PA2_Label, labelMovingColor);
+        DVPA2.movingMouseStyle(PA2_Label, labelMovingColor, Dio.getPinColor(2));
     }//GEN-LAST:event_PA2_LabelMouseMoved
 
     private void PA3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseMoved
-        DVPA3.movingMouseStyle(PA3_Label, labelMovingColor);
+        DVPA3.movingMouseStyle(PA3_Label, labelMovingColor, Dio.getPinColor(3));
 
     }//GEN-LAST:event_PA3_LabelMouseMoved
 
     private void PA4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA4_LabelMouseMoved
-        DVPA4.movingMouseStyle(PA4_Label, labelMovingColor);
+        DVPA4.movingMouseStyle(PA4_Label, labelMovingColor, Dio.getPinColor(4));
     }//GEN-LAST:event_PA4_LabelMouseMoved
 
     private void PA5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA5_LabelMouseMoved
-        DVPA5.movingMouseStyle(PA5_Label, labelMovingColor);
+        DVPA5.movingMouseStyle(PA5_Label, labelMovingColor, Dio.getPinColor(5));
     }//GEN-LAST:event_PA5_LabelMouseMoved
 
     private void PA6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA6_LabelMouseMoved
-        DVPA6.movingMouseStyle(PA6_Label, labelMovingColor);
+        DVPA6.movingMouseStyle(PA6_Label, labelMovingColor, Dio.getPinColor(6));
     }//GEN-LAST:event_PA6_LabelMouseMoved
 
     private void PA7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA7_LabelMouseMoved
-        DVPA7.movingMouseStyle(PA7_Label, labelMovingColor);
+        DVPA7.movingMouseStyle(PA7_Label, labelMovingColor, Dio.getPinColor(7));
     }//GEN-LAST:event_PA7_LabelMouseMoved
 
     private void PA0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseExited
         DVPA0.exiteMouseStyle(PA0_Label);
-        System.out.println("exite");
     }//GEN-LAST:event_PA0_LabelMouseExited
 
     private void PA1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseExited
@@ -1474,6 +1558,7 @@ public class CurrentProject extends javax.swing.JFrame {
     private void PA2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseExited
         DVPA2.exiteMouseStyle(PA2_Label);
 
+        
     }//GEN-LAST:event_PA2_LabelMouseExited
 
     private void PA3_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseExited
@@ -1497,36 +1582,36 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PA7_LabelMouseExited
 
     private void PC0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseMoved
-        DVPC0.movingMouseStyle(PC0_Label, labelMovingColor);
+        DVPC0.movingMouseStyle(PC0_Label, labelMovingColor, Dio.getPinColor(16));
 
     }//GEN-LAST:event_PC0_LabelMouseMoved
 
     private void PC1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC1_LabelMouseMoved
-        DVPC1.movingMouseStyle(PC1_Label, labelMovingColor);
+        DVPC1.movingMouseStyle(PC1_Label, labelMovingColor, Dio.getPinColor(17));
     }//GEN-LAST:event_PC1_LabelMouseMoved
 
     private void PC2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC2_LabelMouseMoved
-        DVPC2.movingMouseStyle(PC2_Label, labelMovingColor);
+        DVPC2.movingMouseStyle(PC2_Label, labelMovingColor, Dio.getPinColor(18));
     }//GEN-LAST:event_PC2_LabelMouseMoved
 
     private void PC3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC3_LabelMouseMoved
-        DVPC3.movingMouseStyle(PC3_Label, labelMovingColor);
+        DVPC3.movingMouseStyle(PC3_Label, labelMovingColor, Dio.getPinColor(19));
     }//GEN-LAST:event_PC3_LabelMouseMoved
 
     private void PC4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC4_LabelMouseMoved
-        DVPC4.movingMouseStyle(PC4_Label, labelMovingColor);
+        DVPC4.movingMouseStyle(PC4_Label, labelMovingColor, Dio.getPinColor(20));
     }//GEN-LAST:event_PC4_LabelMouseMoved
 
     private void PC5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC5_LabelMouseMoved
-        DVPC5.movingMouseStyle(PC5_Label, labelMovingColor);
+        DVPC5.movingMouseStyle(PC5_Label, labelMovingColor, Dio.getPinColor(21));
     }//GEN-LAST:event_PC5_LabelMouseMoved
 
     private void PC6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC6_LabelMouseMoved
-        DVPC6.movingMouseStyle(PC6_Label, labelMovingColor);
+        DVPC6.movingMouseStyle(PC6_Label, labelMovingColor, Dio.getPinColor(22));
     }//GEN-LAST:event_PC6_LabelMouseMoved
 
     private void PC7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC7_LabelMouseMoved
-        DVPC7.movingMouseStyle(PC7_Label, labelMovingColor);
+        DVPC7.movingMouseStyle(PC7_Label, labelMovingColor, Dio.getPinColor(23));
     }//GEN-LAST:event_PC7_LabelMouseMoved
 
     private void PC0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseExited
@@ -1563,35 +1648,35 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PC7_LabelMouseExited
 
     private void PD0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD0_LabelMouseMoved
-        DVPD0.movingMouseStyle(PD0_Label, labelMovingColor);
+        DVPD0.movingMouseStyle(PD0_Label, labelMovingColor, Dio.getPinColor(24));
     }//GEN-LAST:event_PD0_LabelMouseMoved
 
     private void PD1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD1_LabelMouseMoved
-        DVPD1.movingMouseStyle(PD1_Label, labelMovingColor);
+        DVPD1.movingMouseStyle(PD1_Label, labelMovingColor, Dio.getPinColor(25));
     }//GEN-LAST:event_PD1_LabelMouseMoved
 
     private void PD2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD2_LabelMouseMoved
-        DVPD2.movingMouseStyle(PD2_Label, labelMovingColor);
+        DVPD2.movingMouseStyle(PD2_Label, labelMovingColor, Dio.getPinColor(26));
     }//GEN-LAST:event_PD2_LabelMouseMoved
 
     private void PD3_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD3_LabelMouseMoved
-        DVPD3.movingMouseStyle(PD3_Label, labelMovingColor);
+        DVPD3.movingMouseStyle(PD3_Label, labelMovingColor, Dio.getPinColor(27));
     }//GEN-LAST:event_PD3_LabelMouseMoved
 
     private void PD4_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD4_LabelMouseMoved
-        DVPD4.movingMouseStyle(PD4_Label, labelMovingColor);
+        DVPD4.movingMouseStyle(PD4_Label, labelMovingColor, Dio.getPinColor(28));
     }//GEN-LAST:event_PD4_LabelMouseMoved
 
     private void PD5_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD5_LabelMouseMoved
-        DVPD5.movingMouseStyle(PD5_Label, labelMovingColor);
+        DVPD5.movingMouseStyle(PD5_Label, labelMovingColor, Dio.getPinColor(29));
     }//GEN-LAST:event_PD5_LabelMouseMoved
 
     private void PD6_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD6_LabelMouseMoved
-        DVPD6.movingMouseStyle(PD6_Label, labelMovingColor);
+        DVPD6.movingMouseStyle(PD6_Label, labelMovingColor, Dio.getPinColor(30));
     }//GEN-LAST:event_PD6_LabelMouseMoved
 
     private void PD7_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD7_LabelMouseMoved
-        DVPD7.movingMouseStyle(PD7_Label, labelMovingColor);
+        DVPD7.movingMouseStyle(PD7_Label, labelMovingColor, Dio.getPinColor(31));
 
     }//GEN-LAST:event_PD7_LabelMouseMoved
 
@@ -1629,32 +1714,146 @@ public class CurrentProject extends javax.swing.JFrame {
 
     private void PA0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseClicked
 
-        togglePinDirection(0, PA0_Label, DVPA0.getLabelColorBeforeChange());
-        System.out.println("clicked");
+        DVPA0.setLabelColorBeforeChange(Dio.togglePinDirection(0, PA0_Label));
+
     }//GEN-LAST:event_PA0_LabelMouseClicked
 
     private void PA1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseClicked
+
+        Dio.togglePinDirection(1, PA1_Label);
 
     }//GEN-LAST:event_PA1_LabelMouseClicked
 
     private void PA2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseClicked
 
-    }//GEN-LAST:event_PA2_LabelMouseClicked
-    private void togglePinDirection(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
-       
-        DVPA0.setIsClicked(true);
-        DVPA0.setLabelColorAfterChange(Dio.togglePinValue(pinNum, PinDirectionLabel, labelColorBeforeChange));
+        Dio.togglePinDirection(2, PA2_Label);
 
-    }
+    }//GEN-LAST:event_PA2_LabelMouseClicked
+
+    private void PA3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA3_LabelMouseClicked
+        Dio.togglePinDirection(3, PA3_Label);
+    }//GEN-LAST:event_PA3_LabelMouseClicked
+
+    private void PA4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA4_LabelMouseClicked
+        Dio.togglePinDirection(4, PA4_Label);
+    }//GEN-LAST:event_PA4_LabelMouseClicked
+
+    private void PA5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA5_LabelMouseClicked
+        Dio.togglePinDirection(5, PA5_Label);
+    }//GEN-LAST:event_PA5_LabelMouseClicked
+
+    private void PA6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA6_LabelMouseClicked
+        Dio.togglePinDirection(6, PA6_Label);
+    }//GEN-LAST:event_PA6_LabelMouseClicked
+
+    private void PA7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA7_LabelMouseClicked
+        Dio.togglePinDirection(7, PA7_Label);
+    }//GEN-LAST:event_PA7_LabelMouseClicked
+
+    private void PB0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB0_LabelMouseClicked
+        Dio.togglePinDirection(8, PB0_Label);
+    }//GEN-LAST:event_PB0_LabelMouseClicked
+
+    private void PB1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB1_LabelMouseClicked
+        Dio.togglePinDirection(9, PB1_Label);
+    }//GEN-LAST:event_PB1_LabelMouseClicked
+
+    private void PB2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseClicked
+        Dio.togglePinDirection(10, PB2_Label);
+    }//GEN-LAST:event_PB2_LabelMouseClicked
+
+    private void PB3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB3_LabelMouseClicked
+        Dio.togglePinDirection(11, PB3_Label);
+    }//GEN-LAST:event_PB3_LabelMouseClicked
+
+    private void PB4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB4_LabelMouseClicked
+        Dio.togglePinDirection(12, PB4_Label);
+    }//GEN-LAST:event_PB4_LabelMouseClicked
+
+    private void PB5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB5_LabelMouseClicked
+        Dio.togglePinDirection(13, PB5_Label);
+    }//GEN-LAST:event_PB5_LabelMouseClicked
+
+    private void PB6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB6_LabelMouseClicked
+        Dio.togglePinDirection(14, PB6_Label);
+    }//GEN-LAST:event_PB6_LabelMouseClicked
+
+    private void PB7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB7_LabelMouseClicked
+        Dio.togglePinDirection(15, PB7_Label);
+    }//GEN-LAST:event_PB7_LabelMouseClicked
+
+    private void PC0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC0_LabelMouseClicked
+        Dio.togglePinDirection(16, PC0_Label);
+    }//GEN-LAST:event_PC0_LabelMouseClicked
+
+    private void PC1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC1_LabelMouseClicked
+        Dio.togglePinDirection(17, PC1_Label);
+    }//GEN-LAST:event_PC1_LabelMouseClicked
+
+    private void PC2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC2_LabelMouseClicked
+        Dio.togglePinDirection(18, PC2_Label);
+    }//GEN-LAST:event_PC2_LabelMouseClicked
+
+    private void PC3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC3_LabelMouseClicked
+        Dio.togglePinDirection(19, PC3_Label);
+    }//GEN-LAST:event_PC3_LabelMouseClicked
+
+    private void PC4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC4_LabelMouseClicked
+        Dio.togglePinDirection(20, PC4_Label);
+    }//GEN-LAST:event_PC4_LabelMouseClicked
+
+    private void PC5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC5_LabelMouseClicked
+        Dio.togglePinDirection(21, PC5_Label);
+    }//GEN-LAST:event_PC5_LabelMouseClicked
+
+    private void PC6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC6_LabelMouseClicked
+        Dio.togglePinDirection(22, PC6_Label);
+    }//GEN-LAST:event_PC6_LabelMouseClicked
+
+    private void PC7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PC7_LabelMouseClicked
+        Dio.togglePinDirection(23, PC7_Label);
+    }//GEN-LAST:event_PC7_LabelMouseClicked
+
+    private void PD0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD0_LabelMouseClicked
+        Dio.togglePinDirection(24, PD0_Label);
+    }//GEN-LAST:event_PD0_LabelMouseClicked
+
+    private void PD1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD1_LabelMouseClicked
+        Dio.togglePinDirection(25, PD1_Label);
+    }//GEN-LAST:event_PD1_LabelMouseClicked
+
+    private void PD2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD2_LabelMouseClicked
+        Dio.togglePinDirection(26, PD2_Label);
+    }//GEN-LAST:event_PD2_LabelMouseClicked
+
+    private void PD3_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD3_LabelMouseClicked
+        Dio.togglePinDirection(27, PD3_Label);
+    }//GEN-LAST:event_PD3_LabelMouseClicked
+
+    private void PD4_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD4_LabelMouseClicked
+        Dio.togglePinDirection(28, PD4_Label);
+    }//GEN-LAST:event_PD4_LabelMouseClicked
+
+    private void PD5_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD5_LabelMouseClicked
+        Dio.togglePinDirection(29, PD5_Label);
+    }//GEN-LAST:event_PD5_LabelMouseClicked
+
+    private void PD6_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD6_LabelMouseClicked
+        Dio.togglePinDirection(30, PD6_Label);
+    }//GEN-LAST:event_PD6_LabelMouseClicked
+
+    private void PD7_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PD7_LabelMouseClicked
+        Dio.togglePinDirection(31, PD7_Label);
+    }//GEN-LAST:event_PD7_LabelMouseClicked
 
     public void getPinsDirection() {
         System.out.println("getPinsDirection method");
 
         Dio.setCurrentFile(currentFile);
-        JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label5, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
+        JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
         Dio.getDriverElementsValues();
         Dio.setPinDirectionColor(PinDirectionLabel);
-        
+
         System.out.println("getPinsDirection method end");
 
     }
@@ -1723,7 +1922,7 @@ public class CurrentProject extends javax.swing.JFrame {
     private javax.swing.JLabel PB4_Label;
     private javax.swing.JLabel PB5_Label;
     private javax.swing.JLabel PB6_Label;
-    private javax.swing.JLabel PB7_Label5;
+    private javax.swing.JLabel PB7_Label;
     private javax.swing.JLabel PC0_Label;
     private javax.swing.JLabel PC1_Label;
     private javax.swing.JLabel PC2_Label;
