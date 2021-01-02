@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 public class DynamicView {
 
     private Color mainPanelColorBeforeChange, labelColorBeforeChange;
+    private Boolean isClicked;
 
     public Color getMainPanelColorBeforeChange() {
         return mainPanelColorBeforeChange;
@@ -45,13 +46,18 @@ public class DynamicView {
         label.setForeground(labelColorBeforeChange);
     }
 
-    public Boolean isClicked() {
-        return true;
+    public Boolean getIsClicked() {
+        return isClicked;
     }
 
+    public void setIsClicked(Boolean isClicked) {
+        this.isClicked = isClicked;
+    }
+
+
     public void exiteMouseStyle(JLabel label) {
-        if (isClicked() == true) {
-            
+        if (getIsClicked() == true) {
+
         } else {
             label.setForeground(labelColorBeforeChange);
 
