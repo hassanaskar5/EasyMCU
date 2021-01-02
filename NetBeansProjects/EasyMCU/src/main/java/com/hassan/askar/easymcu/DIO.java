@@ -46,19 +46,22 @@ public class DIO extends UpdateDriver {
      * @param pinNum The pin number that'll change
      * @param pinValue The pin value that'll change
      */
-    public void togglePinValue(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
+    public Color togglePinValue(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
+       Color labelColorAfterChange=labelColorBeforeChange;
         if (labelColorBeforeChange == Color.WHITE) {
             config[pinNum] = PIN_DIR.DIO_u8_OUTPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " OUTPUT");
             PinDirectionLabel.setForeground(Color.BLACK);
-            System.out.println(config[0]);
+            labelColorAfterChange = Color.BLACK;
+            System.out.println(config[pinNum]);
         } else if (labelColorBeforeChange == Color.BLACK) {
             config[pinNum] = PIN_DIR.DIO_u8_INPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " INPUT");
             PinDirectionLabel.setForeground(Color.WHITE);
-            System.out.println(config[0]);
+            labelColorAfterChange = Color.WHITE;
+            System.out.println(config[pinNum]);
         }
-
+        return labelColorAfterChange;
     }
 
     public void getDriverElementsValues() {
@@ -69,7 +72,7 @@ public class DIO extends UpdateDriver {
 
     public String[] setPinDirectionColor(JLabel[] PinDirectionLabel) {
         for (int i = 0; i < PinDirectionLabel.length; i++) {
-            System.out.println(config[i]);
+            //System.out.println(config[i]);
             if (config[i].contains("DIO_u8_OUTPUT")) {
                 PinDirectionLabel[i].setText(PinDirectionLabel[i].getName() + " OUTPUT");
                 PinDirectionLabel[i].setForeground(Color.BLACK);
