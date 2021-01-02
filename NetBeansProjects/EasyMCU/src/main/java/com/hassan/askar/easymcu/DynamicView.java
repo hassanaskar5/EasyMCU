@@ -43,6 +43,12 @@ public class DynamicView {
 
         label.setForeground(labelMovingColor);
     }
+    
+    public void movingMouseStyle(JLabel label, Color labelMovingColor, Color labelColorBeforeChange) {
+        this.labelColorBeforeChange = labelColorBeforeChange;
+        label.setForeground(labelMovingColor);
+    }
+
 
     public void exiteMouseStyle(JPanel mainPanel, JPanel pointerPanel, JLabel label) {
         mainPanel.setBackground(mainPanelColorBeforeChange);

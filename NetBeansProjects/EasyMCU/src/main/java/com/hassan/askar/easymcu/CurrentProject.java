@@ -57,16 +57,20 @@ public class CurrentProject extends javax.swing.JFrame {
     Color panelMovingColor = new Color(41, 57, 80);
     Color labelMovingColor = new Color(255, 128, 0);
 
+    DIO Dio = new DIO();
+
     /**
      * Creates new form CurrentProject
      */
     public CurrentProject(String Location, String Name) {
         initComponents();
+        System.out.println("3");
         this.setTitle(Name);
         currentFile = Location;
         projectNameLabel.setText(Name);
-        getPinsDirection(Location);
-
+        System.out.println("4");
+        getPinsDirection();
+        System.out.println("5");
     }
 
     private CurrentProject() {
@@ -1637,19 +1641,22 @@ public class CurrentProject extends javax.swing.JFrame {
 
     }//GEN-LAST:event_PA2_LabelMouseClicked
     private void togglePinDirection(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
-        DIO Dio = new DIO(currentFile);
+       
         DVPA0.setIsClicked(true);
         DVPA0.setLabelColorAfterChange(Dio.togglePinValue(pinNum, PinDirectionLabel, labelColorBeforeChange));
-        
 
     }
 
-    private void getPinsDirection(String Location) {
-        DIO Dio = new DIO(Location);
-        System.out.println("current file frame: "+Location);
+    public void getPinsDirection() {
+        System.out.println("getPinsDirection method");
+
+        Dio.setCurrentFile(currentFile);
         JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label5, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
         Dio.getDriverElementsValues();
         Dio.setPinDirectionColor(PinDirectionLabel);
+        
+        System.out.println("getPinsDirection method end");
+
     }
 
     /**

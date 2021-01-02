@@ -35,7 +35,7 @@ public class DIO extends UpdateDriver {
     private Color pinColors[] = new Color[32];
     private String CurrentFile;
 
-    public DIO(String currentFile) {
+    public void setCurrentFile(String currentFile) {
         CurrentFile = currentFile;
     }
 

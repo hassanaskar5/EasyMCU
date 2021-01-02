@@ -784,11 +784,12 @@ public class EasyMCU extends javax.swing.JFrame {
         try {
             String Location=(String) jTable1.getValueAt(jTable1.getSelectedRow(), 1), Name=(String) jTable1.getValueAt(jTable1.getSelectedRow(), 0);
             errorLabel.setText("");
-            
+            System.out.println("1");
             CurrentProject project = new CurrentProject(Location,Name);
-
+            System.out.println("2");
             project.setVisible(true);
         } catch (Exception e) {
+             System.out.println("6");
             errorLabel.setText("Please choose a Project");
         }
     }//GEN-LAST:event_openProjectPanelMouseClicked
