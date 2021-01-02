@@ -1423,6 +1423,8 @@ public class CurrentProject extends javax.swing.JFrame {
 
     private void PA0_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseMoved
         DVPA0.movingMouseStyle(PA0_Label, labelMovingColor);
+        // DVPA0.setIsClicked(false);
+        System.out.println("Moving");
     }//GEN-LAST:event_PA0_LabelMouseMoved
 
     private void PA1_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseMoved
@@ -1455,7 +1457,8 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PA7_LabelMouseMoved
 
     private void PA0_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseExited
-         DVPA0.exiteMouseStyle(PA0_Label);
+        DVPA0.exiteMouseStyle(PA0_Label);
+        System.out.println("exite");
     }//GEN-LAST:event_PA0_LabelMouseExited
 
     private void PA1_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseExited
@@ -1619,9 +1622,9 @@ public class CurrentProject extends javax.swing.JFrame {
     }//GEN-LAST:event_PD7_LabelMouseExited
 
     private void PA0_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA0_LabelMouseClicked
-        
-         togglePinDirection(0,PA0_Label,DVPA0.getLabelColorBeforeChange());
-         
+
+        togglePinDirection(0, PA0_Label, DVPA0.getLabelColorBeforeChange());
+        System.out.println("clicked");
     }//GEN-LAST:event_PA0_LabelMouseClicked
 
     private void PA1_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA1_LabelMouseClicked
@@ -1631,11 +1634,13 @@ public class CurrentProject extends javax.swing.JFrame {
     private void PA2_LabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PA2_LabelMouseClicked
 
     }//GEN-LAST:event_PA2_LabelMouseClicked
-    private void togglePinDirection( int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
+    private void togglePinDirection(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
         DIO Dio = new DIO(currentFile);
-         Dio.togglePinValue(pinNum, PinDirectionLabel,labelColorBeforeChange);
+        DVPA0.setIsClicked(true);
+        DVPA0.setLabelColorAfterChange(Dio.togglePinValue(pinNum, PinDirectionLabel, labelColorBeforeChange));
+
     }
-    
+
     private void getPinsDirection() {
         DIO Dio = new DIO(currentFile);
         JLabel PinDirectionLabel[] = {PA0_Label, PA1_Label, PA2_Label, PA3_Label, PA4_Label, PA5_Label, PA6_Label, PA7_Label, PB0_Label, PB1_Label, PB2_Label, PB3_Label, PB4_Label, PB5_Label, PB6_Label, PB7_Label5, PC0_Label, PC1_Label, PC2_Label, PC3_Label, PC4_Label, PC5_Label, PC6_Label, PC7_Label, PD0_Label, PD1_Label, PD2_Label, PD3_Label, PD4_Label, PD5_Label, PD6_Label, PD7_Label};
