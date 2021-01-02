@@ -48,19 +48,26 @@ public class DIO extends UpdateDriver {
      */
     public Color togglePinValue(int pinNum, JLabel PinDirectionLabel, Color labelColorBeforeChange) {
        Color labelColorAfterChange=labelColorBeforeChange;
+       //feedback
+       System.out.println(labelColorBeforeChange.toString());
+       System.out.println(config[pinNum]);
+       
+       
+       //processing
         if (labelColorBeforeChange == Color.WHITE) {
             config[pinNum] = PIN_DIR.DIO_u8_OUTPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " OUTPUT");
             PinDirectionLabel.setForeground(Color.BLACK);
             labelColorAfterChange = Color.BLACK;
-            System.out.println(config[pinNum]);
+            
         } else if (labelColorBeforeChange == Color.BLACK) {
             config[pinNum] = PIN_DIR.DIO_u8_INPUT.toString();
             PinDirectionLabel.setText(PinDirectionLabel.getName() + " INPUT");
             PinDirectionLabel.setForeground(Color.WHITE);
             labelColorAfterChange = Color.WHITE;
-            System.out.println(config[pinNum]);
+            
         }
+        System.out.println(config[pinNum]);
         return labelColorAfterChange;
     }
 

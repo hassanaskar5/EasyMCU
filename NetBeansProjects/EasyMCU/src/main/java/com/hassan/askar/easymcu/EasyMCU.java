@@ -75,7 +75,6 @@ public class EasyMCU extends javax.swing.JFrame {
         openProjectLabel = new javax.swing.JLabel();
         openProjectIconLabel = new javax.swing.JLabel();
         errorLabel = new javax.swing.JLabel();
-        PB2_Label = new javax.swing.JLabel();
         calculatorContentPanel = new javax.swing.JPanel();
         exitLabel1 = new javax.swing.JLabel();
         easyMCULabel1 = new javax.swing.JLabel();
@@ -508,21 +507,6 @@ public class EasyMCU extends javax.swing.JFrame {
 
         errorLabel.setForeground(new java.awt.Color(255, 0, 13));
 
-        PB2_Label.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        PB2_Label.setForeground(new java.awt.Color(254, 254, 254));
-        PB2_Label.setText("PB2");
-        PB2_Label.setName("PB2"); // NOI18N
-        PB2_Label.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                PB2_LabelMouseMoved(evt);
-            }
-        });
-        PB2_Label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                PB2_LabelMouseExited(evt);
-            }
-        });
-
         javax.swing.GroupLayout recentProjectsPanelLayout = new javax.swing.GroupLayout(recentProjectsPanel);
         recentProjectsPanel.setLayout(recentProjectsPanelLayout);
         recentProjectsPanelLayout.setHorizontalGroup(
@@ -531,9 +515,7 @@ public class EasyMCU extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(recentProjectsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recentProjectsPanelLayout.createSequentialGroup()
-                        .addGap(185, 185, 185)
-                        .addComponent(PB2_Label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(185, 483, Short.MAX_VALUE)
                         .addComponent(exitLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recentProjectsPanelLayout.createSequentialGroup()
                         .addGroup(recentProjectsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -550,9 +532,7 @@ public class EasyMCU extends javax.swing.JFrame {
         recentProjectsPanelLayout.setVerticalGroup(
             recentProjectsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(recentProjectsPanelLayout.createSequentialGroup()
-                .addGroup(recentProjectsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(exitLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PB2_Label))
+                .addComponent(exitLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(easyMCULabel)
                 .addGap(24, 24, 24)
@@ -881,14 +861,6 @@ public class EasyMCU extends javax.swing.JFrame {
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_formMouseDragged
 
-    private void PB2_LabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseExited
-        DV.exiteMouseStyle(PB2_Label);
-    }//GEN-LAST:event_PB2_LabelMouseExited
-
-    private void PB2_LabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PB2_LabelMouseMoved
-        DV.movingMouseStyle(PB2_Label, labelMovingColor);
-    }//GEN-LAST:event_PB2_LabelMouseMoved
-
     public void updateTable() {
         aFile.insertDataToTable(jTable1);
     }
@@ -932,7 +904,6 @@ public class EasyMCU extends javax.swing.JFrame {
     private javax.swing.JPanel AboutPanel;
     private javax.swing.JPanel CalculatorPanel;
     private javax.swing.JPanel LearnPanel;
-    private javax.swing.JLabel PB2_Label;
     private javax.swing.JPanel aboutContentPanel;
     private javax.swing.JLabel aboutIconLabel;
     private javax.swing.JLabel aboutLabel;
